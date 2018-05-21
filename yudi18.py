@@ -94,7 +94,7 @@ ks.loginResult()
 kt = VIPRO.LINE()
 kt.login(token="Etev8e78qIi4YhBVqDEa.SD28EqyjtLBjPT144PdcQG.qVYykkzw+NimPnhScBGferHf03TjNl6ULMSZ51vsgZ4=")
 kt.loginResult()
-print "login success"
+print "login success yud"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage =""" ====[🇹🇭〖꧁[WAHYUDI]꧂〗🇹🇭]====
@@ -2836,8 +2836,8 @@ def bot(op):
 
 
 #==================================================
-            elif "#ชื่อบอท:" in msg.text:
-                string = msg.text.replace("#ชื่อบอท:","")
+            elif "#nama:" in msg.text:
+                string = msg.text.replace("#nama:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
                     profile.displayName = string
@@ -2911,8 +2911,8 @@ def bot(op):
                     profile.displayName = string
                     kt.updateProfile(profile)
                     cl.sendText(msg.to,"nama berubah menjadi " + string + "")
-            elif "#ตัสบอท:" in msg.text:
-                string = msg.text.replace("#ตัสบอท:","")
+            elif "#profil:" in msg.text:
+                string = msg.text.replace("#profil:","")
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki.getProfile()
                     profile.statusMessage = string
@@ -2985,8 +2985,8 @@ def bot(op):
                     profile = kt.getProfile()
                     profile.statusMessage = string
                     kt.updateProfile(profile)
-            elif "#ชื่อตัวเอง:" in msg.text:
-                string = msg.text.replace("#ชื่อตัวเอง:","")
+            elif "#updatename:" in msg.text:
+                string = msg.text.replace("#updatename:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
@@ -3164,7 +3164,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 """)
 
 #==================================================
-            elif msg.text in ["ยกเลิก"]:
+            elif msg.text in ["cancel"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     if X.invitee is not None:
@@ -3180,7 +3180,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
                         cl.sendText(msg.to,"Can not be used outside the group")
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["บอทยกเลิก"]:
+            elif msg.text in ["cancelall"]:
                 if msg.toType == 2:
                     klist=[kj,kh,kg,kf,ke,kd,kc,kk,ki,kn,ko,kp,kq,kr,ks,kt]
                     kicker = random.choice(klist)
@@ -3331,7 +3331,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 				msg.contentType = 13
 				msg.contentMetadata = {'mid': mid}
 				cl.sendMessage(msg)
-				cl.sendText(msg.to,"[SELFBOT PHET HACK BOT]")
+				cl.sendText(msg.to,"[SELFBOT WAHYUDI BOT]")
             elif "Id" == msg.text:
                 key = msg.to
                 cl.sendText(msg.to, key)
@@ -3368,22 +3368,22 @@ http://line.me/ti/p/yudi_std02► แมวนุ
                 msg.contentMetadata = {"mid":mmid}
                 cl.sendMessage(msg)
 
-            elif "Phet Keyy" in msg.text:
-                cl.sendText(msg.to,""" 􀜁􀇔􏿿􀜁􀇔􏿿[{PHET HACK BOT}] 􀜁􀇔􏿿􀜁􀇔􏿿 \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Pb1 Gift]\n􀜁􀇔􏿿[Pb1 bye]\n\n
+            elif "yudi Key" in msg.text:
+                cl.sendText(msg.to,""" 􀜁􀇔􏿿􀜁􀇔􏿿[{WAHYUDI BOT}] 􀜁􀇔􏿿􀜁􀇔􏿿 \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Pb1 Gift]\n􀜁􀇔􏿿[Pb1 bye]\n\n
 
 ۩இहई╬۞¥ûDï۞╬हई۩
 ﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴﺴ
 
 """)
 
-            elif msg.text.lower() == 'ยกเลิก1':
+            elif msg.text.lower() == 'cancel1':
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.invitee]
                     for _mid in gMembMids:
                         cl.cancelGroupInvitation(msg.to,[_mid])
                     cl.sendText(msg.to,"I pretended to cancel and canceled(๑و•̀ω•́)و")
-            elif msg.text.lower() == 'บอทยกเลิก1':
+            elif msg.text.lower() == 'cancelall1':
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.invitee]
@@ -3415,7 +3415,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
             elif "P3 mid" == msg.text:
                 kc.sendText(msg.to,Cmid)
 
-            elif msg.text == "กลุ่ม":
+            elif msg.text == "ginfo":
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -3458,8 +3458,8 @@ http://line.me/ti/p/yudi_std02► แมวนุ
                 kr.sendText(msg.to,"Bot 16🔥")
                 ks.sendText(msg.to,"Bot 17🔥")
                 kt.sendText(msg.to,"Bot 18🔥")
-            elif "Phet Say " in msg.text:
-                                bctxt = msg.text.replace("Phet Say ","")
+            elif "yudi Say " in msg.text:
+                                bctxt = msg.text.replace("yudi Say ","")
                                 ki.sendText(msg.to,(bctxt))
                                 kk.sendText(msg.to,(bctxt))
                                 kc.sendText(msg.to,(bctxt))
@@ -4258,14 +4258,14 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 
 #===============================================
             elif msg.text in ["Sp","sp"]:
-                cl.sendText(msg.to, "Progress.......")
+                cl.sendText(msg.to, "Ngopiii.......")
                 start = time.time()
                 time.sleep(0.001)
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu executed"
             elif msg.text in ["Bot Speed"]:
-                cl.sendText(msg.to, "Progress.......")
+                cl.sendText(msg.to, "Ngopiii.......")
                 start = time.time()
                 time.sleep(0.001)
                 elapsed_time = time.time() - start
@@ -4289,7 +4289,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
                 kt.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu executed"
 
-            elif msg.text in ["Keyy"]:
+            elif msg.text in ["Key"]:
                 cl.sendText(msg.to, "[SELFBOT இहई╬۞¥ûDï۞╬हई BOT]\n\n❂͜͡☆➣ Namelock on\n❂͜͡☆➣ Namelock off\n❂͜͡☆➣ Blockinvite on\n❂͜͡☆➣ Blockinvite off\n❂͜͡☆➣ Backup on\n❂͜͡☆➣ Backup off\n\n[ இहई╬۞¥ûDï۞╬हई ]")
 
 #========================================
@@ -4542,9 +4542,9 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 					for manusia in n:
 						cl.sendText(manusia,(bctxt))
 										 
-            elif msg.text in ["ครอบครัว","opo"]:
+            elif msg.text in ["menuself","opo"]:
                 msg.contentType = 13
-                cl.sendText(msg.to, "[SELFBOT PHET HACK BOT]\n\n[ทีมขายบอท]\n[By. இहई╬۞¥ûDï۞╬हई ]")
+                cl.sendText(msg.to, "[SELFBOT WAHYUDI BOT]\n\n[ทีมขายบอท]\n[By. இहई╬۞¥ûDï۞╬हई ]")
                 cl.sendText(msg.to, "หัวหน้าครอบครัว:இहई╬۞¥ûDï۞╬हई")
                 msg.contentMetadata = {'mid': 'u3e21520910fc9780c9d4944146dd8508'}
                 cl.sendMessage(msg)
@@ -5380,7 +5380,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 #=================================Add mimic==========================
             
             elif ("add mimic " in msg.text):
-          #      if msg.from_ in admin:
+                if msg.from_ in admin:
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -5398,7 +5398,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 #=================================Del mimic==========================
             
             elif ("del mimic " in msg.text):
-           #     if msg.from_ in admin:
+                if msg.from_ in admin:
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -5502,7 +5502,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
         print error
 
 
-def autoSta():
+def autoStart():
     count = 1
     while True:
         try:
