@@ -97,91 +97,88 @@ kt.loginResult()
 print "login success yud"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage =""" ====[🇹🇭〖꧁[WAHYUDI]꧂〗🇹🇭]====
-
-                🇹🇭⬇️⬇️[WAHYUDI]⬇️⬇️🇹🇭
-
-❂͜͡🇹🇭➣ Me
-❂͜͡🇹🇭➣ Id
-❂͜͡🇹🇭➣ Mid
-❂͜͡🇹🇭➣ Gift
-❂͜͡🇹🇭➣ Mid @
-❂͜͡🇹🇭➣ Cn: Display Name
-❂͜͡🇹🇭➣ Cc: Clock Name
-❂͜͡🇹🇭➣ Mc:
-❂͜͡🇹🇭➣ Tl: text
-❂͜͡🇹🇭➣ Auto join: on/off
-❂͜͡🇹🇭➣ Auto add: on/off
-❂͜͡🇹🇭➣ Auto leave: on/off
-❂͜͡🇹🇭➣ Clock: on/off
-❂͜͡🇹🇭➣ Share on
-❂͜͡🇹🇭➣ Add message: text
-❂͜͡🇹🇭➣ Message:
-❂͜͡🇹🇭➣ Add comment: text
-❂͜͡🇹🇭➣ Comment: 
-❂͜͡🇹🇭➣ Cbroadcast text
-❂͜͡🇹🇭➣ Gbroadcast text
-❂͜͡🇹🇭➣ Reject
+helpMessage =""" ====[🇮🇩〖꧁[WAHYUDI]꧂〗🇮🇩]====
+❂͜͡🇮🇩➣ Me
+❂͜͡🇮🇩➣ Id
+❂͜͡🇮🇩➣ Mid
+❂͜͡🇮🇩➣ Gift
+❂͜͡🇮🇩➣ Mid @
+❂͜͡🇮🇩➣ Cn: Display Name
+❂͜͡🇮🇩➣ Cc: Clock Name
+❂͜͡🇮🇩➣ Mc:
+❂͜͡🇮🇩➣ Tl: text
+❂͜͡🇮🇩➣ Auto join: on/off
+❂͜͡🇮🇩➣ Auto add: on/off
+❂͜͡🇮🇩➣ Auto leave: on/off
+❂͜͡🇮🇩➣ Clock: on/off
+❂͜͡🇮🇩➣ Share on
+❂͜͡🇮🇩➣ Add message: text
+❂͜͡🇮🇩➣ Message:
+❂͜͡🇮🇩➣ Add comment: text
+❂͜͡🇮🇩➣ Comment: 
+❂͜͡🇮🇩➣ Cbroadcast text
+❂͜͡🇮🇩➣ Gbroadcast text
+❂͜͡🇮🇩➣ Reject
 
        ༺•㏒ Instruction Room ㏒•༻
 
-❂͜͡🍎➣ Creator
-❂͜͡🍎➣ Gn: text
-❂͜͡🍎➣ Invite: mid
-❂͜͡🍎➣ Invite:on Send contact
-❂͜͡🍎➣ Mybot
-❂͜͡🍎➣ Allgift 
-❂͜͡🍎➣ All mid
-❂͜͡🍎➣ Cancel
-❂͜͡🍎➣ Link on/off
-❂͜͡🍎➣ ginfo
-❂͜͡🍎➣ Gurl
-❂͜͡🍎➣ Glist
-❂͜͡🍎➣ Sett
-❂͜͡🍎➣ Gcancel: number
-❂͜͡🍎➣ Masuk / Join
-❂͜͡🍎➣ Sayang
-❂͜͡🍎➣ Beb
-❂͜͡🍎➣ Cinta
-❂͜͡🍎➣ Sayang pulang
-❂͜͡🍎➣ Pulang
-❂͜͡🍎➣ Ban @ target
-❂͜͡🍎➣ Uban @ target
-❂͜͡🍎➣ Ban -> send contact
-❂͜͡🍎➣ Unban -> send contact
-❂͜͡🍎➣ Comment bl/wl
-❂͜͡🍎➣ Banlist
-❂͜͡🍎➣ Cekban
-❂͜͡🍎➣ Clear ban
-❂͜͡🍎➣ Kill
-❂͜͡🍎➣ Kill ban
-❂͜͡🍎➣ Speed
-❂͜͡🍎➣ Ambilin @ Steal dp target
-❂͜͡🍎➣ Sampul @ Steal cover target
-❂͜͡🍎➣ Copy @ All bot copy target
-❂͜͡🍎➣ Mycopy @ Copy target profile
-❂͜͡🍎➣ Keluar @ target
-❂͜͡🍎➣ music
-❂͜͡🍎➣ .reboot
-❂͜͡🍎➣ Wikipedia
-❂͜͡🍎➣ Cleanse
-❂͜͡🍎➣ Pbot
-❂͜͡🍎➣ Pcancel
-❂͜͡🍎➣ P1-P18 Contact Bot
-❂͜͡🍎➣ P1-P2 tl:
-❂͜͡🍎➣ P1-P2 say
-❂͜͡🍎➣ P1-P2 tag
-❂͜͡🍎➣ P1-P2 invite:
-❂͜͡🍎➣ P1-P3 mid
-❂͜͡🍎➣ P1-P2 gurl
-❂͜͡🍎➣ P1-P5 gift
-❂͜͡🍎➣ P1-P18 rename:
-❂͜͡🍎➣ All: rename all:
-❂͜͡🍎➣ Allbio: Isi bio:
-❂͜͡🍎➣ P1-P18 rgroup
-❂͜͡🍎➣ P1-P5 join
-❂͜͡🍎➣ P1-P5 bye
-❂͜͡🍎➣ P1-P5 link on/off
+❂͜͡🇮🇩➣ Creator
+❂͜͡🇮🇩➣ Gn: text
+❂͜͡🇮🇩➣ Invite: mid
+❂͜͡🇮🇩➣ Invite:on Send contact
+❂͜͡🇮🇩➣ Mybot
+❂͜͡🇮🇩➣ Allgift 
+❂͜͡🇮🇩➣ All mid
+❂͜͡🇮🇩➣ Cancel
+❂͜͡🇮🇩➣ Link on/off
+❂͜͡🇮🇩➣ ginfo
+❂͜͡🇮🇩➣ Gurl
+❂͜͡🇮🇩➣ Glist
+❂͜͡🇮🇩➣ Sett
+❂͜͡🇮🇩➣ Gcancel: number
+❂͜͡🇮🇩➣ Masuk / Join
+❂͜͡🇮🇩➣ Sayang
+❂͜͡🇮🇩➣ Beb
+❂͜͡🇮🇩➣ Cinta
+❂͜͡🇮🇩➣ Sayang pulang
+❂͜͡🇮🇩➣ Pulang
+❂͜͡🇮🇩➣ Ban @ target
+❂͜͡🇮🇩➣ Uban @ target
+❂͜͡🇮🇩➣ Ban -> send contact
+❂͜͡🇮🇩➣ Unban -> send contact
+❂͜͡🇮🇩➣ Comment bl/wl
+❂͜͡🇮🇩➣ Banlist
+❂͜͡🇮🇩➣ Cekban
+❂͜͡🇮🇩➣ Clear ban
+❂͜͡🇮🇩➣ Kill
+❂͜͡🇮🇩➣ Kill ban
+❂͜͡🇮🇩➣ Speed
+❂͜͡🇮🇩➣ Ambilin @ Steal dp target
+❂͜͡🇮🇩➣ Sampul @ Steal cover target
+❂͜͡🇮🇩➣ Copy @ All bot copy target
+❂͜͡🇮🇩➣ Mycopy @ Copy target profile
+❂͜͡🇮🇩➣ Keluar @ target
+❂͜͡🇮🇩➣ music
+❂͜͡🇮🇩➣ .reboot
+❂͜͡🇮🇩➣ Wikipedia
+❂͜͡🇮🇩➣ Cleanse
+❂͜͡🇮🇩➣ Pbot
+❂͜͡🇮🇩➣ Pcancel
+❂͜͡🇮🇩➣ P1-P18 Contact Bot
+❂͜͡🇮🇩➣ P1-P2 tl:
+❂͜͡🇮🇩➣ P1-P2 say
+❂͜͡🇮🇩➣ P1-P2 tag
+❂͜͡🇮🇩➣ P1-P2 invite:
+❂͜͡🇮🇩➣ P1-P3 mid
+❂͜͡🇮🇩➣ P1-P2 gurl
+❂͜͡🇮🇩➣ P1-P5 gift
+❂͜͡🇮🇩➣ P1-P18 rename:
+❂͜͡🇮🇩➣ All: rename all:
+❂͜͡🇮🇩➣ Allbio: Isi bio:
+❂͜͡🇮🇩➣ P1-P18 rgroup
+❂͜͡🇮🇩➣ P1-P5 join
+❂͜͡🇮🇩➣ P1-P5 bye
+❂͜͡🇮🇩➣ P1-P5 link on/off
 
      ༺•㏒ COMMAND Protect ㏒•༻
 
@@ -189,15 +186,10 @@ helpMessage =""" ====[🇹🇭〖꧁[WAHYUDI]꧂〗🇹🇭]====
 ❂͜͡☆➣ Backup on/off
 ❂͜͡☆➣ Protect On/off
 ❂͜͡☆➣ Namelock On/off
-
-        
-  
-     ☆[WAHYUDI]☆
-
-           〖꧁[WAHYUDI]꧂〗
-       [ 🇹🇭〖[WAHYUDI]〗🇹🇭 ]
+ 
+       [ 🇮🇩〖[WAHYUDI]〗🇮🇩 ]
        
-       http://line.me/ti/p/yudi_std02
+       http://line.me/ti/p/~yudi_std02
 
 """
 helpMessage2 ="""╔════════════════╗
@@ -258,7 +250,7 @@ helpMessage2 ="""╔════════════════╗
 ║[Blockinvite: on/off]: 
 ╠═══════════════════╝
 ║
-║ [  🇹🇭〖[WAHYUDI]〗🇹🇭  ]
+║ [  🇮🇩〖[WAHYUDI]〗🇮🇩  ]
 ╚═══════════════════════════╝
 """
 
@@ -297,22 +289,22 @@ admsa = "u6b34b703cbc5fc83cd1e5b6832a05352"
 adminMID = "u6b34b703cbc5fc83cd1e5b6832a05352"
 wait = {
     'contact':False,
-    'autoJoin':False,
+    'autoJoin':True,
     'autoCancel':{"on":True, "members":1},
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me  🇹🇭〖[WAHYUDI]〗🇹🇭  http://line.me/ti/p/yudi_std02 ► แมวชิ   http://line.me/ti/p/yudi_std02 ► แมวนุ  http://line.me/ti/p/yudi_std02   ► พี่โจ้  ",
+    'message':"Thanks for add Me  🇮🇩〖[WAHYUDI]〗🇮🇩  http://line.me/ti/p/~yudi_std02 ► แมวชิ   http://line.me/ti/p/yudi_std02 ► แมวนุ  http://line.me/ti/p/yudi_std02   ► พี่โจ้  ",
     "lang":"JP",
-    "comment":"AutoLike 🥀Love🥀  🇹🇭〖[WAHYUDI]〗🇹🇭  http://line.me/ti/p/yudi_std02 ► แมวชิ   http://line.me/ti/p/yudi_std02 ► แมวนุ  http://line.me/ti/p/yudi_std02   ► พี่โจ้  ",
-    "commentOn":False,
+    "comment":"AutoLike 🥀Love🥀  🇮🇩〖[WAHYUDI]〗🇮🇩  http://line.me/ti/p/~yudi_std02 ► แมวชิ   http://line.me/ti/p/yudi_std02 ► แมวนุ  http://line.me/ti/p/yudi_std02   ► พี่โจ้  ",
+    "commentOn":True,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
-    "clock":False,
-    "cName":"꧁☢☠ℓℓஆՁՃิ☠☡꧂ISSC♐",
-    "likeOn":False,
-    "pname":False,
+    "clock":True,
+    "cName":"꧁☢☠ℓℓஆՁՃิ☠☡꧂",
+    "likeOn":True,
+    "pname":True,
     "blacklist":{},
     "whitelist":{},
     "wblacklist":False,
@@ -328,7 +320,7 @@ wait = {
     "pnharfbot":{},
     "pname":{},
     "pro_name":{},
-	"posts":False,
+	"posts":True,
 	}
 
 wait2 = {
@@ -2145,7 +2137,7 @@ def bot(op):
                 cl.like(url[25:58], url[66:], likeType=1001)
         if op.type == 25:
             msg = op.message
-            if msg.text.lower() in ["phet tag all"]:
+            if msg.text.lower() in ["yudi"]:
                 group = cl.getGroup(msg.to)
                 nama = [contact.mid for contact in group.members]
                 nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
@@ -2200,7 +2192,7 @@ def bot(op):
                 if jml > 500:
                     cl.sendText(msg.to,'Member melebihi batas.')
                 cnt = Message()
-                cnt.text = "PHET TAG DONE : " + str(jml) +  " Members"
+                cnt.text = "YUDI TAG DONE : " + str(jml) +  " Members"
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
 
@@ -2985,8 +2977,8 @@ def bot(op):
                     profile = kt.getProfile()
                     profile.statusMessage = string
                     kt.updateProfile(profile)
-            elif "#updatename:" in msg.text:
-                string = msg.text.replace("#updatename:","")
+            elif "updatename:" in msg.text:
+                string = msg.text.replace("updatename:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
@@ -3159,7 +3151,7 @@ Viewlastseen   สั่งอ่าน
 http://line.me/ti/p/yudi_std02► แมวนุ
 
 
-🇹🇭〖இहई╬۞¥ûDï۞╬हई〗🇹🇭
+🇮🇩〖இहई╬۞¥ûDï۞╬हई〗🇮🇩
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 """)
 
@@ -3865,10 +3857,9 @@ http://line.me/ti/p/yudi_std02► แมวนุ
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Already。")
 
-
             elif msg.text in ["menu","Set"]:
                 print "Setting pick up..."
-                md = "இहई╬۞¥ûDï۞╬हई\n\n"
+                md = "WAHYUDI'\n\n"
                 if wait["likeOn"] == True: md+="􀜁􀇔􏿿 Auto like : on 􀜁􀄯􏿿\n"
                 else:md+="􀜁􀇔􏿿 Auto like : off 􀜁􀄰􏿿\n"
                 if wait["copy"] == True: md+="�� Mimic : on\n"
@@ -4052,58 +4043,58 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 #===========================================
             elif msg.text.lower() == 'botname':
                 profile = ki.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 ki.sendText(msg.to, text)
                 profile = kk.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kk.sendText(msg.to, text)
                 profile = kc.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kc.sendText(msg.to, text)
                 profile = kd.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kd.sendText(msg.to, text)
                 profile = ke.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 ke.sendText(msg.to, text)
                 profile = kf.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kf.sendText(msg.to, text)
                 profile = kg.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kg.sendText(msg.to, text)
                 profile = kh.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kh.sendText(msg.to, text)
                 profile = kj.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kj.sendText(msg.to, text)
                 profile = kn.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kn.sendText(msg.to, text)
                 profile = ko.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 ko.sendText(msg.to, text)
                 profile = kp.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kp.sendText(msg.to, text)
                 profile = kq.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kq.sendText(msg.to, text)
                 profile = kr.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kr.sendText(msg.to, text)
                 profile = ks.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 ks.sendText(msg.to, text)
                 profile = kt.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kt.sendText(msg.to, text)
                 profile = kl.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 kl.sendText(msg.to, text)
                 profile = km.getProfile()
-                text = profile.displayName + "🇹🇭"
+                text = profile.displayName + "🇮🇩"
                 km.sendText(msg.to, text)
             elif "Ambil QR: " in msg.text:
                 if msg.toType == 2:
@@ -4432,7 +4423,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
 						
 #========================================
 #---------------FUNGSI RATAIN GRUP TANPA KICK SESAMA BOT/Admin/Bots----------#
-            elif "bubar" in msg.text:
+            elif "bubar1" in msg.text:
               if msg.from_ in Bots:
                 if msg.toType == 2:
                     print "ok"
@@ -5502,7 +5493,7 @@ http://line.me/ti/p/yudi_std02► แมวนุ
         print error
 
 
-def autoStart():
+def autoSta():
     count = 1
     while True:
         try:
@@ -5536,7 +5527,7 @@ def nameUpdate():
     while True:
         try:
         #while a2():
-            #pass
+           # pass
             if wait["clock"] == True:
                 now2 = datetime.now()
                 nowT = datetime.strftime(now2,"〖%H:%M〗")
