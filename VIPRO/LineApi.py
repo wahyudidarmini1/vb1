@@ -24,7 +24,7 @@ class LINE:
   def __init__(self):
     self.Talk = Talk()
     self._session = requests.session()
-    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 'X-Line-Access': 'Emp1jl3qOjxCjXEhmaN5.QdLXoVPaKOU6WpvD80Sijq.NcwnmLOaI/dIyi3Y84WTCOxbNTN27m3ODDpkMLDPY64=', 'User-Agent': 'Line/7.14.0'}
+    self._headers = {'X-Line-Application': 'CHROMEOS\t7.18.0\tiVipro\t11.12.1', 'X-Line-Access': self.authToken, 'User-Agent': 'Line/7.18.0'}
 
   def login(self, mail=None, passwd=None, cert=None, token=None, qr=False, callback=None):
     if callback is None:
@@ -44,9 +44,9 @@ class LINE:
     self.authToken = self.Talk.authToken
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0',
+              'X-Line-Application': 'CHROMEOS\t7.18.0\tiVipro\t11.12.1',
               'X-Line-Access': self.authToken,
-              'User-Agent': 'Line/7.14.0'
+              'User-Agent': 'Line/7.18.0'
    }
 
     self.Poll = Poll(self.authToken)
@@ -607,7 +607,7 @@ class LINE:
       prof = self.getProfile()
 
       print("╔════════════════════════════════╗")
-      print("║   「 WAHYUDI_JOMBANG」         ║")
+      print("║         「 ᴠɪᴘʀᴏ ʙᴏᴛ」         ║")
       print("╚════════════════════════════════╝")
       print("MID= " + prof.mid)
       print("NAMA= " + prof.displayName)
