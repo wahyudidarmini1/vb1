@@ -342,10 +342,10 @@ ki8mid = ki8.getProfile().mid
 ki9mid = ki9.getProfile().mid
 ki10mid = ki10.getProfile().mid
 Smid = owner.getProfile().mid
-Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,ki10mid,Smid,"b34b703cbc5fc83cd1e5b6832a05352"]
-admin=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,Smid,"b34b703cbc5fc83cd1e5b6832a05352"]
-creator=["b34b703cbc5fc83cd1e5b6832a05352"]
-admsa=["b34b703cbc5fc83cd1e5b6832a05352"]
+Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,ki10mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
+admin=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,Smid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
+creator=["u6b34b703cbc5fc83cd1e5b6832a05352"]
+admsa=["u6b34b703cbc5fc83cd1e5b6832a05352"]
 
 readOpen = codecs.open("st2__b.json","r","utf-8")
 read = json.load(readOpen)
