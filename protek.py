@@ -1,54 +1,63 @@
 # -*- coding: utf-8 -*-
-#Vipro_Bot
+import VIPRO
+from VIPRO.lib.curve.ttypes import *	
+from datetime import datetime	
+import io,os,re,ast,six,sys,glob,json,time,timeit,codecs,random,shutil,urllib,urllib2,urllib3,goslate,html5lib,requests,threading,wikipedia,subprocess,googletrans	,pytz
+from gtts import gTTS	
+from random import randint	
+from time import sleep	
+from urllib import urlopen, urlretrieve, urlencode	
+from io import StringIO	
+from bs4 import BeautifulSoup	
+from threading import Thread	
+from googletrans import Translator	
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
-from datetime import datetime
-from bs4 import BeautifulSoup
-from threading import Thread
-from googletrans import Translator
-from gtts import gTTS
-import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
-
-cl = LINETCR.LINE()
+if (six.PY2):
+    import urllib2
+    import urllib
+else:
+    import urllib.request
+    import urllib.parse
+	
+cl = VIPRO.LINE()
 #cl.login(qr=True)
-cl.login(token='token')
+cl.login(token='EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
-ki = LINETCR.LINE()
+ki = VIPRO.LINE()
 #ki.login(qr=True)
-ki.login(token='token')
+ki.login(token='Et6ryxn0rB1fTfGNJgcf.0Gxc/M3RVqR4nYkPcDjtZW.Xkll2rvg8vUFbMk6qpRWoceqRxdOI0iDl0ur+6X3Oco=')
 ki.loginResult()
 print "Ki-Login Success\n"
 
-kk = LINETCR.LINE()
+kk = VIPRO.LINE()
 #kk.login(qr=True)
-kk.login(token='token')
+kk.login(token='Etvv8gYEbtnCCqBZRNQ6.u5E0qHumGolsyebggFHFzG.ec3r4QPVpRDOzH0KJCvBAA17bxPvJSv3AFY5aY3FSdc=')
 kk.loginResult()
 print "Kk-Login Success\n"
 
-kc = LINETCR.LINE()
+kc = VIPRO.LINE()
 #kc.login(qr=True)
-kc.login(token='token')
+kc.login(token='EtsTYlXCYikpZWAegsJa.SD28EqyjtLBjPT144PdcQG.xqJFgw5hzuw8LWKkOxu7S6hy/Y5BrDnmPA1HdG/QfuA=')
 kc.loginResult()
 print "Kc-Login Success\n"
 
-kr = LINETCR.LINE()
+kr = VIPRO.LINE()
 #kr.login(qr=True)
-kr.login(token='token')
+kr.login(token='EtoRCJAcOPR55ljziER8.BQIP++PfVBkYt2USSm1tMa.z2Bun2uocA+xtD5MapicqGem+/Ef5jcWhO41ejG7uGQ=')
 kr.loginResult()
 print "Kr-Login Success\n"
 
-vipro = LINETCR.LINE() #(isi dengan akun utama fungsinya biar akun utama di kick langsung di invite bot)
+vipro = VIPRO.LINE() #(isi dengan akun utama fungsinya biar akun utama di kick langsung di invite bot)
 #vipro.login(qr=True)
-vipro.login(token='token')
+vipro.login(token='EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=')
 vipro.loginResult()
 print "Vipro-Login Success\n"
 
-km = LINETCR.LINE() #(bot ini di luar grup fungsinya jadi algojo kaya kicker siri)
+km = VIPRO.LINE() #(bot ini di luar grup fungsinya jadi algojo kaya kicker siri)
 #km.login(qr=True)
-km.login(token='token')
+km.login(token='EtYi5SaWf69VjIB4WWa4.bOiJimUzjLhiapSWdVjeva.sViIOjulyc4xTNADy6yOdWT5+fT1kFVeYMEKjC/6aQk=')
 km.loginResult()
 print "Km-Login Success\n\n=====[Sukses All Login]====="
 
@@ -83,7 +92,7 @@ selfMessage ="""
 ╠➩〘Friendlist〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -105,7 +114,7 @@ botMessage ="""
 ╠➩〘Bye bot (Usir Semua Bot)〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -144,7 +153,7 @@ mediaMessage ="""
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -181,10 +190,10 @@ groupMessage ="""
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
-vip="uda936836a9869eb86ec8ab992a4e8979"
+vip="u6b34b703cbc5fc83cd1e5b6832a05352"
 
 setMessage ="""
 ╔═════════════════════════
@@ -198,7 +207,7 @@ setMessage ="""
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -225,7 +234,7 @@ creatorMessage ="""
 ╠➩〘Turn off〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -266,7 +275,7 @@ adminMessage ="""
 ╠➩〘All join / (Vipro1/2/3/4 Join)〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -289,7 +298,7 @@ helpMessage ="""
 ╠➩〘Status〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -305,7 +314,7 @@ protectMessage ="""
 ╠➩〘Invitepro on/off〙
 ╠═════════════════════════
 ║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║    〽️ line.me/ti/p/~yudi_std02 〽️
 ╚═════════════════════════
 """
 
@@ -318,9 +327,9 @@ Cmid = kc.getProfile().mid
 Dmid = kr.getProfile().mid
 Emid = km.getProfile().mid
 Fmid = vipro.getProfile().mid
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,"uda936836a9869eb86ec8ab992a4e8979"]
-Creator=["uda936836a9869eb86ec8ab992a4e8979"]
-admin=["uda936836a9869eb86ec8ab992a4e8979"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,"u6b34b703cbc5fc83cd1e5b6832a05352"]
+Creator=["u6b34b703cbc5fc83cd1e5b6832a05352"]
+admin=["u6b34b703cbc5fc83cd1e5b6832a05352"]
 
 contact = cl.getProfile()
 backup1 = cl.getProfile()
@@ -380,11 +389,11 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment1":"Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",
-    "comment2":"Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",
-    "comment3":"Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",
-    "comment4":"Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",
-    "comment5":"Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",    
+    "comment1":"Auto Like ©By : yudi\nContact Me : 👉 line.me/ti/p/~yudi_std02",
+    "comment2":"Auto Like ©By : yudi\nContact Me : 👉 line.me/ti/p/~yudi_std02",
+    "comment3":"Auto Like ©By : yudi\nContact Me : 👉 line.me/ti/p/~yudi_std02",
+    "comment4":"Auto Like ©By : yudi\nContact Me : 👉 line.me/ti/p/~yudi_std02",
+    "comment5":"Auto Like ©By : yudi\nContact Me : 👉 line.me/ti/p/~yudi_std02",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)",    
@@ -1408,9 +1417,9 @@ def bot(op):
 		
             elif msg.text in ["Admin","admin"]:
                 msg.contentType = 13
-                admin1 = "uda936836a9869eb86ec8ab992a4e8979"
-                admin2 = "u8b2bb5214c1afc77d06901a535c23e30"
-                admin3 = "u57a54b914085fea6f04c19f6fe589057"
+                admin1 = "u6b34b703cbc5fc83cd1e5b6832a05352"
+                admin2 = "u6ea8a9fffa45bdb2b24f6bacb0cd5398"
+                admin3 = "u06822320cb992651c800fb300ef24454"
                 msg.contentMetadata = {'mid': vip}
                 random.choice(KAC).sendMessage(msg)
                 #msg.contentMetadata = {'mid': admin1}
@@ -1964,7 +1973,7 @@ def bot(op):
 	     else:
 		    cl.sendText(msg.to,"Khusus Vipro")	     
 
-            elif msg.text in ["Allprotect on"]:
+            elif msg.text in ["."]:
 		if msg.from_ in admin:
                     wait["AutoCancel"][msg.to] = True
                     wait["AutoCancelon"] = True
@@ -1982,7 +1991,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Khusus Vipro")
 
-            elif msg.text in ["Allprotect off"]:
+            elif msg.text in [","]:
 		if msg.from_ in admin:
                     wait["AutoCancel"][msg.to] = False
                     wait["AutoCancelon"] = False
@@ -2700,7 +2709,7 @@ def bot(op):
                 cl.sendText(msg.to, "☆Checkpoint Checked☆")
                 print "Setview"
 
-            elif msg.text in ["Viewseen","Check","Ciduk","Cyduk"]:
+            elif msg.text in ["Viewseen","Check","Ciduk","☆Checkpoint Checked☆"]:
 	        lurkGroup = ""
 	        dataResult, timeSeen, contacts, userList, timelist, recheckData = [], [], [], [], [], []
                 with open('dataSeen/'+msg.to+'.txt','r') as rr:
@@ -2819,7 +2828,7 @@ def bot(op):
                 random.choice(KAC).inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "uda936836a9869eb86ec8ab992a4e8979"
+                midd = "u6b34b703cbc5fc83cd1e5b6832a05352"
                 random.choice(KAC).inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
@@ -2880,7 +2889,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
 
-            elif msg.text in ["All join","Join all"]:
+            elif msg.text in ["All join","123"]:
 		if msg.from_ in admin:
 		    G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2960,7 +2969,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Sape lu!")
 		    
-            elif msg.text in ["Ghost join"]:
+            elif msg.text in ["Ghost"]:
 		if msg.from_ in admin:
                     G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2983,7 +2992,7 @@ def bot(op):
 		except Exception as E:
 		    print E
 
-            elif msg.text in ["Bye bot"]:
+            elif msg.text in ["moleh"]:
               if wait["Leave"] == True:		    
                     ki.leaveGroup(msg.to)
                     kk.leaveGroup(msg.to)
@@ -3002,9 +3011,9 @@ def bot(op):
 
             elif msg.text in ["Absen"]:
 		cl.sendText(msg.to,"Pasukan Absen!!")
-                ki.sendText(msg.to,"Vipro1 Hadiir  \(ˆ▿ˆ)/")
-                kk.sendText(msg.to,"Vipro2 Hadiir  \(ˆ▿ˆ)/")
-                kc.sendText(msg.to,"Vipro3 Hadiir  \(ˆ▿ˆ)/")
+                ki.sendText(msg.to,"Abah Hadiir  \(ˆ▿ˆ)/")
+                kk.sendText(msg.to,"Mak Hadiir  \(ˆ▿ˆ)/")
+                kc.sendText(msg.to,"Team Hadiir  \(ˆ▿ˆ)/")
                 kr.sendText(msg.to,"Hadiir Semua Ban Jamban  \(ˆ▿ˆ)/")
 
 
