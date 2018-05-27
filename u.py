@@ -20,15 +20,15 @@ else:
     import urllib.parse
 
 acil = VIPRO.LINE() 
-acil.login(token="EtqbQkJfEqf19zmtNov8.SdpL+kTqxOrCmKy8jwhOwa.1FABoKOj4fCFMpS+Jj44HYTYr8qdvc8GNsHHBp4yYlo=")
+acil.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
 acil.loginResult()
 
 pb1 = VIPRO.LINE() 
-pb1.login(token="EtiUetQ4zEjtQFosg1l2.RNRHuF5FU767ynC+eQ74KG.qTGEsx0gIRh3spbKK3jUcG1Eyhc/pH1JK75u3TiHG+g=")
+pb1.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
 pb1.loginResult()
 
 pb2 = VIPRO.LINE() 
-pb2.login(token="EtA2wqhnztl1L7mE8Ut7.GppIZiwPUzUkVOiNy/8X1W.JDt/ILPK1inLLUjDrS5wfaYwarYCKmAymeOTzXdV2nU=")
+pb2.login(token="Et6ryxn0rB1fTfGNJgcf.0Gxc/M3RVqR4nYkPcDjtZW.Xkll2rvg8vUFbMk6qpRWoceqRxdOI0iDl0ur+6X3Oco=")
 pb2.loginResult()
 
 
@@ -136,7 +136,7 @@ mid = acil.getProfile().mid
 pb1mid = pb1.getProfile().mid
 pb2mid = pb2.getProfile().mid
 Bots=[mid,pb1mid,pb2mid]
-admsa = "ub033e5fcab505e845c32463c2561e858"
+admsa = "u6b34b703cbc5fc83cd1e5b6832a05352"
 
 wait = {
     'contact':False,
@@ -145,9 +145,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"""❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nhttps://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂""",
+    'message':"""❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nMakasih ya\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂""",
     "lang":"JP",
-    "comment1":"❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nhttps://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂",
+    "comment1":"❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nMakasih ya\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂",
     "comment":"Thanks For Add Me",
     "commentOn":False,
     "commentBlack":{},
@@ -235,7 +235,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u06856881c176ae1144cc757861d15056":
+                if msg.from_ == "u6b34b703cbc5fc83cd1e5b6832a05352":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -805,7 +805,7 @@ def bot(op):
                 acil.sendText(msg.to,md)
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'ufce863f62f40706c01fa4a3c3c4cb096'}
+                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
                 acil.sendMessage(msg)
                 acil.sendText(msg.to,"❂•••••{CREATOR PRANKBOTS}•••••❂")
             elif "Gowner" == msg.text:
@@ -815,7 +815,7 @@ def bot(op):
                 acil.sendMessage(msg)
             elif cms(msg.text,["Add"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'u5818cb4404411c2e2e6e6937d172cca8'}
+                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
                 acil.sendMessage(msg)
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
