@@ -384,8 +384,8 @@ cctv = {
 setTime = {}
 setTime = wait2['setTime']
 
-contact = cl.getProfile()
-mybackup = cl.getProfile()
+contact = vipro.getProfile()
+mybackup = vipro.getProfile()
 mybackup.displayName = contact.displayName
 mybackup.statusMessage = contact.statusMessage
 mybackup.pictureStatus = contact.pictureStatus
