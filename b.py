@@ -1119,13 +1119,13 @@ def bot(op):
                                             ki5.kickoutFromGroup(op.param1,[op.param2])
                                         except:
                                             pass
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
                     text = msg.text
                     if text is not None:
                         ki.sendText(msg.to,text)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.to in settings["simiSimi"]:
                 if settings["simiSimi"][msg.to] == True:
@@ -1216,7 +1216,7 @@ def bot(op):
                     vipro.removeAllMessages(op.param2)
                 else:
                     vipro.removeAllMessages(op.param2)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
                 if wait["wblack"] == True:
