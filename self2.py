@@ -17,39 +17,39 @@ if (six.PY2):
     import urllib
 else:
     import urllib.request
-import urllib.parse
+#import urllib.parse
 
-cl = LINETCR.LINE()
+cl = VIPRO.LINE()
 #cl.login(qr=True)
-cl.login(token='EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=')
+cl.login(token='EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
-ki = LINETCR.LINE()
+ki = VIPRO.LINE()
 #ki.login(qr=True)
-ki.login(token='EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=')
+ki.login(token='EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=')
 ki.loginResult()
 print "Ki-Login Success\n"
 
-kk = LINETCR.LINE()
+kk = VIPRO.LINE()
 #kk.login(qr=True)
 kk.login(token='Et6ryxn0rB1fTfGNJgcf.0Gxc/M3RVqR4nYkPcDjtZW.Xkll2rvg8vUFbMk6qpRWoceqRxdOI0iDl0ur+6X3Oco=')
 kk.loginResult()
 print "Kk-Login Success\n"
 
-kc = LINETCR.LINE()
+kc = VIPRO.LINE()
 #kc.login(qr=True)
 kc.login(token='Etvv8gYEbtnCCqBZRNQ6.u5E0qHumGolsyebggFHFzG.ec3r4QPVpRDOzH0KJCvBAA17bxPvJSv3AFY5aY3FSdc=')
 kc.loginResult()
 print "Kc-Login Success\n"
 
-kr = LINETCR.LINE()
+kr = VIPRO.LINE()
 #kr.login(qr=True)
 kr.login(token='EtsTYlXCYikpZWAegsJa.SD28EqyjtLBjPT144PdcQG.xqJFgw5hzuw8LWKkOxu7S6hy/Y5BrDnmPA1HdG/QfuA=')
 kr.loginResult()
 print "Kr-Login Success\n"
 
-km = LINETCR.LINE()
+km = VIPRO.LINE()
 #km.login(qr=True)
 km.login(token='EtoRCJAcOPR55ljziER8.BQIP++PfVBkYt2USSm1tMa.z2Bun2uocA+xtD5MapicqGem+/Ef5jcWhO41ejG7uGQ=')
 km.loginResult()
@@ -1671,7 +1671,7 @@ def bot(op):
                         h = cl.getGroup(i).name
 		        if h == ng:
 			    cl.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
-		            cl.leaveGroup(i)
+		            #cl.leaveGroup(i)
 			    ki.leaveGroup(i)
 			    kk.leaveGroup(i)
 			    kc.leaveGroup(i)
@@ -1687,7 +1687,7 @@ def bot(op):
                 if msg.from_ in Creator:
 		    for i in gid:
 			cl.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
-		        cl.leaveGroup(i)
+		        #cl.leaveGroup(i)
 			ki.leaveGroup(i)
 			kk.leaveGroup(i)
 			kc.leaveGroup(i)
@@ -2656,7 +2656,7 @@ def bot(op):
 
             elif msg.text in ["Auto like"]:
                 wait["likeOn"] = True
-                cl.sendText(msg.to,"Shere Post Kamu Yang Mau Di Like!")                
+                cl.sendText(msg.to,"statusmu ndi cok seng Mau Di Like!")                
 
 
             elif msg.text in ["Steal contact"]:
@@ -2870,7 +2870,7 @@ def bot(op):
 
             elif msg.text in ["moleh"]:
               if wait["Leave"] == True:		    
-                    ki.leaveGroup(msg.to)
+                    #ki.leaveGroup(msg.to)
                     kk.leaveGroup(msg.to)
                     kc.leaveGroup(msg.to)
                     kr.leaveGroup(msg.to)
