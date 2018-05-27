@@ -20,11 +20,11 @@ else:
     import urllib.parse
 
 owner = VIPRO.LINE() #Akun Utama
-owner.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
+owner.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
 owner.loginResult()
     
 vipro = VIPRO.LINE()
-vipro.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
+vipro.login(token="EtRKKXzqude2jELzlii2.AZs3a8Vf+ipnhLTOmQbtuG.iSZiO8eD19Oqskj4uKO964wX6KnkceV2b/5NoQrf/V8=")
 vipro.loginResult()
 
 ki = VIPRO.LINE()
@@ -36,7 +36,7 @@ ki2.login(token="Etvv8gYEbtnCCqBZRNQ6.u5E0qHumGolsyebggFHFzG.ec3r4QPVpRDOzH0KJCv
 ki2.loginResult()
 
 ki3 = VIPRO.LINE()
-ki3.login(token="EtsTYlXCYikpZWAegsJa.SD28EqyjtLBjPT144PdcQG.xqJFgw5hzuw8LWKkOxu7S6hy/Y5BrDnmPA1HdG/QfuA=")
+ki3.login(token="EthtqmL5cSdh6y8TzRWa.SD28EqyjtLBjPT144PdcQG.dVKSDqx8KWWgg479az11yI8+3x/U+/JyvJQLSkT1sCc=")
 ki3.loginResult()
 
 ki4 = VIPRO.LINE()
@@ -48,7 +48,7 @@ ki5.login(token="EtYi5SaWf69VjIB4WWa4.bOiJimUzjLhiapSWdVjeva.sViIOjulyc4xTNADy6y
 ki5.loginResult()
 
 ki6 = VIPRO.LINE()
-ki6.login(token="EtmCBBYyZGh0AaQF9Ajc.Ee/eeDlrP0uTdFlXuHf9Na.35keAxP2kTO7RU2jBlMdEbw+f213L7B8tSbyxj4OycM=")
+ki6.login(token="EtW0oNs00CrpszczMuc1.hSPlQK0sOlldo8W2iFcJWq.1npYt8eCdNTi8mF/OV9iNjMthVsCwCrr41Ixu/oEHMQ=")
 ki6.loginResult()
 
 ki7 = VIPRO.LINE()
@@ -56,11 +56,11 @@ ki7.login(token="EtcECOVE4WmEf258Fzh5.s0GaOrjP6Vfn98NxODhvLq.b3dnjhmwYaFtiR1mDkG
 ki7.loginResult()
 
 ki8 = VIPRO.LINE()
-ki8.login(token="EtXNLIugGH5kxtAYQrQb.DQKC4akNYSJx6AqIuzyS6W.o6cL4PSG6afC1hQCOx+tF7KWC4YRHS9eYJxcBYiU0FQ=")
+ki8.login(token="Et9Lgd0J5MnwfmqGrZr4./0DOo/10A+PUJG8iHA76Pa.oTXp/JjUBIXDoYmNT1UA0m2ee5PbVVjeJcDE60f8XsQ=")
 ki8.loginResult()
 
 ki9 = VIPRO.LINE()
-ki9.login(token="Et2eZfVCEucBIIwPJBg1.hSPlQK0sOlldo8W2iFcJWq.YxEDXKPzgSju1WYNbwYN5O3oBIBBTTkn/xyffwXzO5g=")
+ki9.login(token="EtbGhCwvaT2rhGNY2kZf.StMJ2yMSv7H5XrT17lGnZW.JQfz7NJXLCAqVaKFJBdIW071GXQaphc2OnfonPRPS3c=")
 ki9.loginResult()
 
 ki10 = VIPRO.LINE() #Ghost
