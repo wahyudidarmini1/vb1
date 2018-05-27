@@ -431,7 +431,7 @@ wait = {
     'message':"THANKS FOR ADD ME",
     "lang":"JP",
     "comment":"Thanks For Add Me",
-    "comment1":"ᴀᴜᴛᴏ ʟɪᴋᴇ ⓑⓨ「 ᴠɪᴘʀᴏ 」\n\n\n\nline.me/ti/p/~gjxvipro",
+    "comment1":"ᴀᴜᴛᴏ ʟɪᴋᴇ ⓑⓨ「 wahyudi 」\n\n\n\nline.me/ti/p/~yudi_std02",
     "commentOn":False,
     "likeOn":{},
     "wcOn":True,
