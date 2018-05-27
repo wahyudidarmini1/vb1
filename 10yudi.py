@@ -19,12 +19,12 @@ else:
     import urllib.request
 import urllib.parse
 
-satpam = VIPRO.LINE() # Koplaxs
-satpam.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
-satpam.loginResult()
+#satpam = VIPRO.LINE() # Koplaxs
+#satpam.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
+#satpam.loginResult()
 
 cl = VIPRO.LINE() # Koplaxs
-cl.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
+cl.login(token="EtRKKXzqude2jELzlii2.AZs3a8Vf+ipnhLTOmQbtuG.iSZiO8eD19Oqskj4uKO964wX6KnkceV2b/5NoQrf/V8=")
 cl.loginResult()
 
 ki = VIPRO.LINE() #Luffy
@@ -36,7 +36,7 @@ kk.login(token="Etvv8gYEbtnCCqBZRNQ6.u5E0qHumGolsyebggFHFzG.ec3r4QPVpRDOzH0KJCvB
 kk.loginResult()
 
 kc = VIPRO.LINE() #Sanji
-kc.login(token="EtsTYlXCYikpZWAegsJa.SD28EqyjtLBjPT144PdcQG.xqJFgw5hzuw8LWKkOxu7S6hy/Y5BrDnmPA1HdG/QfuA=")
+kc.login(token="EthtqmL5cSdh6y8TzRWa.SD28EqyjtLBjPT144PdcQG.dVKSDqx8KWWgg479az11yI8+3x/U+/JyvJQLSkT1sCc=")
 kc.loginResult()
 
 ks = VIPRO.LINE() #Ussop
@@ -48,7 +48,7 @@ ka.login(token="EtYi5SaWf69VjIB4WWa4.bOiJimUzjLhiapSWdVjeva.sViIOjulyc4xTNADy6yO
 ka.loginResult()
 
 kb = VIPRO.LINE() #Franky
-kb.login(token="EtmCBBYyZGh0AaQF9Ajc.Ee/eeDlrP0uTdFlXuHf9Na.35keAxP2kTO7RU2jBlMdEbw+f213L7B8tSbyxj4OycM=")
+kb.login(token="EtW0oNs00CrpszczMuc1.hSPlQK0sOlldo8W2iFcJWq.1npYt8eCdNTi8mF/OV9iNjMthVsCwCrr41Ixu/oEHMQ=")
 kb.loginResult()
 
 ko = VIPRO.LINE() #Brook
@@ -56,19 +56,19 @@ ko.login(token="EtcECOVE4WmEf258Fzh5.s0GaOrjP6Vfn98NxODhvLq.b3dnjhmwYaFtiR1mDkGz
 ko.loginResult()
 
 ke = VIPRO.LINE() #Nami
-ke.login(token="EtXNLIugGH5kxtAYQrQb.DQKC4akNYSJx6AqIuzyS6W.o6cL4PSG6afC1hQCOx+tF7KWC4YRHS9eYJxcBYiU0FQ=")
+ke.login(token="Et9Lgd0J5MnwfmqGrZr4./0DOo/10A+PUJG8iHA76Pa.oTXp/JjUBIXDoYmNT1UA0m2ee5PbVVjeJcDE60f8XsQ=")
 ke.loginResult()
 
 ku = VIPRO.LINE() #Robin
-ku.login(token="Et2eZfVCEucBIIwPJBg1.hSPlQK0sOlldo8W2iFcJWq.YxEDXKPzgSju1WYNbwYN5O3oBIBBTTkn/xyffwXzO5g=")
+ku.login(token="EtbGhCwvaT2rhGNY2kZf.StMJ2yMSv7H5XrT17lGnZW.JQfz7NJXLCAqVaKFJBdIW071GXQaphc2OnfonPRPS3c=")
 ku.loginResult()
 
 satpam = VIPRO.LINE() # Jinbei
-satpam.login(token="EtlE0pUeqCT7ghUGOix9.VfG2daMSMKOL78PxRGOi6q.5QFqnOSRirnfAQw6pV+yK/d324TUhcgd6x64d3WZ0Wg=")
+satpam.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
 satpam.loginResult()
 
 k1 = VIPRO.LINE() #Backup (Gunanya Kalo Akun Self Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Selfbot Dan Selfbot Di undang sama dia,lalu dy leave lagi :D)
-k1.login(token="EtjwThG4XTKTpj5twV3b.laBbOEpcsXIXQThDvNl//W.bVUyzqqhhyyd57l3m3vAMDdYGV/hf7GQUmDOPuLrFak=")
+k1.login(token="EtlE0pUeqCT7ghUGOix9.VfG2daMSMKOL78PxRGOi6q.5QFqnOSRirnfAQw6pV+yK/d324TUhcgd6x64d3WZ0Wg=")
 k1.loginResult()
 
 print "Login Success Plak"
@@ -76,8 +76,33 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage =""" ^[JOMBANG Bot]^
-OWNER •WAHYUDI•"""
+-==================-
+◄]·♦·Menu For Public·♦·[►
+[•]Adminlist
+[•]Ownerlist
+[•]Info Group
+[•]Welcome
+[•]Creator
+[•]Bot
+◄]·♦·Menu For Admin·♦·[►
+-==================-
+[•]Cancel
+[•]「Buka/Tutup」qr
+[•]Mid Bot
+[•]Speed/Sp
+[•]「Cctv/Ciduk」
+[•]Status/Set
+[•]Gurl
+[•]Jam「On/Off」
+[•]Tag all/Tagall
+[•]Absen/Respon
+[•]Banlist
+>>[Perintah Proteksi]<<
+👑Hanya Untuk Owner👑
+-==================-
 
+-==================-
+"""
 Setgroup =""" 
     [Admin Menu]
 ==============
@@ -153,18 +178,18 @@ Idline: http://line.me/ti/p/~yudi_std02""",
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName2":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName3":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName4":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName5":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName6":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName7":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName8":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName9":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName10":"۝♐IssC_WAhyuDi♐۝ ",
-    "cName11":"۝♐IssC_WAhyuDi♐۝",
-    "cName12":"۝♐IssC_WAhyuDi♐۝",
+    "cName":"۝♐WAhyuDi♐۝ ",
+    "cName2":"۝♐WAhyuDi♐۝ ",
+    "cName3":"۝♐_WAhyuDi♐۝ ",
+    "cName4":"۝♐WAhyuDi♐۝ ",
+    "cName5":"۝♐WAhyuDi♐۝ ",
+    "cName6":"۝♐WAhyuDi♐۝ ",
+    "cName7":"۝♐WAhyuDi♐۝ ",
+    "cName8":"۝♐WAhyuDi♐۝ ",
+    "cName9":"۝♐WAhyuDi♐۝ ",
+    "cName10":"۝♐WAhyuDi♐۝ ",
+    "cName11":"۝♐WAhyuDi♐۝",
+    "cName12":"۝♐WAhyuDi♐۝",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -208,7 +233,6 @@ def NOTIFIED_READ_MESSAGE(op):
             pass
     except:
         pass
-
 
 def bot(op):
     try:
@@ -944,8 +968,6 @@ def bot(op):
                 cl.leaveRoom(op.param1)
         if op.type == 25:
             msg = op.message
-
-
             if msg.toType == 1:
                 if wait["leaveRoom"] == True:
                     cl.leaveRoom(msg.to)
@@ -1310,7 +1332,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "Kelebihan batas :v")
     #-----------------=Selesai=------------------ 
-            elif msg.text in ["Bot?"]: #Mengirim Semua Kontak Bot
+            elif msg.text in ["Bot"]: #Mengirim Semua Kontak Bot
               if msg.from_ in admin:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
