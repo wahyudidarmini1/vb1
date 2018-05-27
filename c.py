@@ -1,124 +1,118 @@
 # -*- coding: utf-8 -*-
+import VIPRO
+from VIPRO.lib.curve.ttypes import *	
+from datetime import datetime	
+import io,os,re,ast,six,sys,glob,json,time,timeit,codecs,random,shutil,urllib,urllib2,urllib3,goslate,html5lib,requests,threading,wikipedia,subprocess,googletrans	,pytz
+from gtts import gTTS	
+from random import randint	
+from time import sleep	
+from urllib import urlopen, urlretrieve, urlencode	
+from io import StringIO	
+from bs4 import BeautifulSoup	
+from threading import Thread	
+from googletrans import Translator	
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
-from datetime import datetime
-from bs4 import BeautifulSoup
-#import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia
-import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
-from gtts import gTTS
-import requests
-#import urlopen
-import ast
-import subprocess
-import profile
-import client
-import goslate
-import urllib2
-import urllib3
-import tempfile
-import html5lib
-import requests,tempfile
-from threading import Thread
-import requests,json,urllib
-from random import randint
-from googletrans import Translator
-import time,random,sys,json,codecs,threading,glob,re
+if (six.PY2):
+    import urllib2
+    import urllib
+else:
+    import urllib.request
+    import urllib.parse
 
 #cl = LINETCR.LINE()
-cl.login(qr=True)
-#cl.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
+#cl.login(qr=True)
+cl.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
 #cl.loginResult()
 
 
 #ki = LINETCR.LINE()
-ki.login(qr=True)
-#ki.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
+#ki.login(qr=True)
+ki.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
 #ki.loginResult()
 
 #kk = LINETCR.LINE()
 #kk.login(qr=True)
-#kk.login(token="EnD6uojittnb5qqLeEt3.9qPM7NC2vWiRtQTZ/x4SyW.YlhswTQVUjF2mE1Pxg+0goaUHbC6KsjhL7PJUkQ9jqc=")
+kk.login(token="Et6ryxn0rB1fTfGNJgcf.0Gxc/M3RVqR4nYkPcDjtZW.Xkll2rvg8vUFbMk6qpRWoceqRxdOI0iDl0ur+6X3Oco=")
 #kk.loginResult()
 
 #kc = LINETCR.LINE()
 #kc.login(qr=True)
-#kc.login(token="EnbwtB4NdqZee7Z4dqb8.usk2DxruRb2/eg2IYrqXsa.GXNGIGGPMRMtNQMn/Yej3RCpDp3xiTPcg27NMYjlFRM=")
+kc.login(token="Etvv8gYEbtnCCqBZRNQ6.u5E0qHumGolsyebggFHFzG.ec3r4QPVpRDOzH0KJCvBAA17bxPvJSv3AFY5aY3FSdc=")
 #kc.loginResult()
 
 #kd = LINETCR.LINE()
 #kd.login(qr=True)
-#kd.login(token="Enmz3AeffNs6Jm9bjdO3.BYv5MSepCurmE04bZMOzaW.C+hWn+qQhF6gP36//9Tcx78HyogXy5DEZ/vK+TS33i0=")
+kd.login(token="EtsTYlXCYikpZWAegsJa.SD28EqyjtLBjPT144PdcQG.xqJFgw5hzuw8LWKkOxu7S6hy/Y5BrDnmPA1HdG/QfuA=")
 #kd.loginResult()
 
 #ke = LINETCR.LINE()
 #ke.login(qr=True)
-#ke.login(token="EnOtD6mnAa3VbT7ckdJc.aYbkAqXV5gf9Eu4MbqlVBa.SKr19sZLlKHExBdDvCO+Xi1MUYzs53wryO28bRdijn4=")
+ke.login(token="EtoRCJAcOPR55ljziER8.BQIP++PfVBkYt2USSm1tMa.z2Bun2uocA+xtD5MapicqGem+/Ef5jcWhO41ejG7uGQ=")
 #ke.loginResult()
 
 #kf = LINETCR.LINE()
 #kf.login(qr=True)
-#kf.login(token="EnglcDa00DaCXyAhkub8.MQvnSQmxLZyecm+cYLEska.B6wvaPOUvoO6TeJ/HSLoduT08oL/Lp+Ts9/qyNtXnv0=")
+kf.login(token="EtYi5SaWf69VjIB4WWa4.bOiJimUzjLhiapSWdVjeva.sViIOjulyc4xTNADy6yOdWT5+fT1kFVeYMEKjC/6aQk=")
 #kf.loginResult()
 
 #kg = LINETCR.LINE()
 #kg.login(qr=True)
-#kg.login(token="EnheqLhJWfoutaO6Il24.PwzfHga0YXE729Rxwc5qXa.IJUzESsyxMMtwXP2VLxYHYt2gDcjzLA3+UWzI7nDDmE=")
+kg.login(token="EtmCBBYyZGh0AaQF9Ajc.Ee/eeDlrP0uTdFlXuHf9Na.35keAxP2kTO7RU2jBlMdEbw+f213L7B8tSbyxj4OycM=")
 #kg.loginResult()
 
 #kh = LINETCR.LINE()
 #kh.login(qr=True)
-#kh.login(token="EnTqV2MY9zSyjnly3PR0.X7ONBO4L4YtA49fO3i6lua.30yYOYb5UU3tY3HibpO/VCTyxwWCxXmC5hZWEYxgsHg=")
+kh.login(token="EtcECOVE4WmEf258Fzh5.s0GaOrjP6Vfn98NxODhvLq.b3dnjhmwYaFtiR1mDkGzugj038CvfdPtJCEtANmO9cw=")
 #kh.loginResult()
 
 #kj = LINETCR.LINE()
 #kj.login(qr=True)
-#kj.login(token="EnNNnOcUUuDnBDq04Trf.oVwyNFPWGPJZC00RELiFVW.vBO5ZPqdRgnOlV7pZukedMqNalSdBS463cKRWLPsDnI=")
+kj.login(token="EtXNLIugGH5kxtAYQrQb.DQKC4akNYSJx6AqIuzyS6W.o6cL4PSG6afC1hQCOx+tF7KWC4YRHS9eYJxcBYiU0FQ=")
 #kj.loginResult()
 
 #kl = LINETCR.LINE()
 #kl.login(qr=True)
-#kl.login(token="EnwpfuLGXqIZrkL7m7Aa.4873flXX7QJRw4jo2j7roG.jRjCAigm/xA35AtuxFXs70tLf2F53B9juFI/UOciCKo=")
+kl.login(token="Et2eZfVCEucBIIwPJBg1.hSPlQK0sOlldo8W2iFcJWq.YxEDXKPzgSju1WYNbwYN5O3oBIBBTTkn/xyffwXzO5g=")
 #kl.loginResult()
 
 #km = LINETCR.LINE()
 #km.login(qr=True)
-#km.login(token="EnoyYxUZB5Xv7Bl9Ys57.KN6gqRyZQ0iuRiU5jNIj1W.SxC9+Q+ahlwaT+Wz124+tfYzek6HekkdDDqbipYbLrw=")
+km.login(token="EtlE0pUeqCT7ghUGOix9.VfG2daMSMKOL78PxRGOi6q.5QFqnOSRirnfAQw6pV+yK/d324TUhcgd6x64d3WZ0Wg=")
 #km.loginResult()
 
 #kn = LINETCR.LINE()
 #kn.login(qr=True)
-#kn.login(token="EnoktyaoHcLmCOmoVVq6.xkaL7HAdfdzB4bRIIC04jG.JnqJCQGBclHgL1/eqGsHb9zzylxKDlolWsYUqED9OlU=")
+kn.login(token="EtjwThG4XTKTpj5twV3b.laBbOEpcsXIXQThDvNl//W.bVUyzqqhhyyd57l3m3vAMDdYGV/hf7GQUmDOPuLrFak=")
 #kn.loginResult()
 
 #ko = LINETCR.LINE()
 #ko.login(qr=True)
-#ko.login(token="EnwrWLZ64U29Sqha0vre.9lU+Lm8IEAdBW1wrKZGG7G.4Frg+d66MCO+zH3Me73RzaA7WdBFP94nzn8m28O6luI=")
+ko.login(token="EtFpUZijg9rLEHVSJOh3.Z7tUqKO5oaEP2cnIzYreyW.TLeQWyKVyYpzQ77oR9DL8lTwdqcgcd7sIPqC4O2ac2s=")
 #ko.loginResult()
 
-#cl = LINETCR.LINE()
+#kp = LINETCR.LINE()
 #kp.login(qr=True)
-#cl.login(token="EnwOOwOK4e4Uyu5uyXBa.am5VEhHU3Oh3X2olVwx66G.mQ5Hs2DVNitNFLNKm5INJzlDELTBEm1GhfrcVc2ibsk=")
-#cl.loginResult()
+kp.login(token="EtRMBkxyMbHesU0KcWY4./0DOo/10A+PUJG8iHA76Pa.F/vIRMmpgrDRPEXZRxpyrRKvviEXgh23ApnM7PajR4c=")
+#kp.loginResult()
 
 #kq = LINETCR.LINE()
 #kq.login(qr=True)
-#kq.login(token="EniBgK2GUXPoANVBfKpb.tyEjT4SUhBFf7gJV34m+gW.X7qZpyneaItMRP8s+alxBMkzQCtGu/j19Xok/k9/9fA=")
+kq.login(token="EtE2Tq8Y2xHarMoe0ew9.qMCHtdJp35ezbFZkNZ9z2q.SJU/CJxt4KDH2VL3kj95zttlXpdv1eR7W4OnTShYgJQ=")
 #kq.loginResult()
 
-cl = LINETCR.LINE()
+#kr = LINETCR.LINE()blm
 #kr.login(qr=True)
-cl.login(token="EngqjAX9djgqsY8BVCOc.cTXHQLZwcjas2Whcxxlhda./6K1IVcI3KrpoWRMMhrBsjbsUPQeQit9hrCTyA0C/Hc=")
-cl.loginResult()
+kr.login(token="EtyUipQvFopJMi9tKT35.ek3xRTvV3R9tPwJiLN/31q.QaZ/yFOrUzK/A8h9ZS+yLjUcb9ZSp8uW7nM0B/kwrrY=")
+#kr.loginResult()
 
 #ks = LINETCR.LINE()
 #ks.login(qr=True)
-#ks.login(token="EnWTfMjpKM0WOkCUDHD4.srjUosW4RgcA0sSjVMH6Ta.Nd374H7hPFi71iCeupORD5lXrCG+Y2j+7xzG8CZHddQ=")
+ks.login(token="EtH0mXOrwzKAdqS1coK3.eXGEKA8y87MQtoFvPFGwuW.qsHf27D95T7seXXw83YYGybFa5DoFdfG9cin5asAvN8=")
 #ks.loginResult()
 
 #kt = LINETCR.LINE()
 #kt.login(qr=True)
-#kt.login(token="EnoemlXBtIWaRpxaCEc7.OS/hbTH5Iz2F5McUPTGhfW.b02+CcT2Ell/OZkgzJrKIwuFSWh1vPiM9bDw+YRVpIY=")
+kt.login(token="EtifF8Zg3m60JGYjgLHb.drkXjI9kC7gz45kx2rUb2W.w61o8ilg/cIVctY1PJD3kZAz/Qzc9GUOVupeojhjmdw=")
 #kt.loginResult()
 
 print "U.k kalem Bot"
@@ -128,7 +122,7 @@ sys.setdefaultencoding('utf-8')
 
 helpMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+===꧁==WAHYUDI==꧂===
 
 
 〖U,K_SELF COMAND IN GROUP〗
@@ -136,15 +130,15 @@ helpMessage ="""
 〖U,K_COMAND BOT〗
 〖U.K-COMMAND PROTECT〗
 ________________________________________
-̋̾̂͘[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+̋̾̂͘[ 🇲🇨〖WONG-JOMBANG〗🇲🇨 ] ��✒•┅─────
 ________________________________________
 """
 
 inGroupMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+===꧁==WAHYUDI==꧂===
 _______________________________________
-〖U,K_SELF COMAND IN GROUP〗
+〖W,J_SELF COMAND IN GROUP〗
 _______________________________________
 
 �❂͜͡🇲🇨➣ Me
@@ -170,16 +164,16 @@ _______________________________________
 �❂͜͡🇲🇨➣ Gbroadcast text
 �❂͜͡🇲🇨➣ Reject
 ________________________________________
-̋̾̂[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+̋̾̂[ 🇲🇨〖WONG-JOMBANG〗🇲🇨 ] ��✒•┅─────
 ________________________________________
 """
 
 
 groupMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+===꧁==WAHYUDI==꧂===
 ________________________________________
-〖U,K_COMAND GROUP]〗
+〖W,J_COMAND GROUP]〗
 ________________________________________
 �❂͜͡🕵️➣ Creator
 �❂͜͡🕵️➣ Gn: text
@@ -244,16 +238,16 @@ ________________________________________
 �❂͜͡🕵️➣ Tr-Ar = Arabia
 �❂͜͡🕵️➣ Tr-Hy = armenian
 _______________________________________
-[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+[ 🇲🇨〖WONG-JOMBANG〗🇲🇨 ] ��✒•┅─────
 _______________________________________
 """
 
 botMessage ="""
 
 
-=====꧁U.K_KILLER꧂=====
+===꧁==WAHYUDI==꧂===
 ______________________________________
-〖U,K_COMAND BOT〗
+〖W,J_COMAND BOT〗
 ______________________________________
 �❂͜͡🇲🇨➣🕵️ Ybot
 �❂͜͡🇲🇨➣🕵️ Ycancel
@@ -273,46 +267,46 @@ ______________________________________
 �❂͜͡🇲🇨➣🕵️ Y1-Y5 bye
 �❂͜͡🇲🇨➣🕵️ Y1-Y2 link on/off
 _______________________________________
-̋̾̂͘[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅─────
+̋̾̂͘[ 🇲🇨〖WONG-JOMBANG〗🇲🇨 ] ��✒•┅─────
 _______________________________________
 """
 
 
 protectMessage ="""
 
-=====꧁U.K_KILLER꧂=====
+===꧁==WAHYUDI==꧂===
 ______________________________________
-〖U.K-COMMAND PROTRET〗
+〖W,J-COMMAND PROTRET〗
 ______________________________________
-꧁U.K_KILLER꧂ AutoKick on/off
-꧁U.K_KILLER꧂ Namelock On/off
-꧁U.K_KILLER꧂ Mode on
+꧁WONG-JOMBANG꧂ AutoKick on/off
+꧁WONG-JOMBANG꧂ Namelock On/off
+꧁WONG-JOMBANG꧂ Mode on
 ______________________________________
-̨̻̪͓̦̋̾̂̽̎͜͜[ 🇲🇨〖🕉unni͡° ͜ʖ ͡°oppa🕉〗🇲🇨 ] ��✒•┅───── 
+̨̻̪͓̦̋̾̂̽̎͜͜[ 🇲🇨〖WONG-JOMBANG〗🇲🇨 ] ��✒•┅───── 
 ______________________________________
 """
 
 
 KAC=[cl]
 mid = cl.getProfile().mid
-#Amid = ki.getProfile().mid
-#Bmid = kk.getProfile().mid
-#Cmid = kc.getProfile().mid
-#Dmid = kd.getProfile().mid
-#Emid = ke.getProfile().mid
-#Fmid = kf.getProfile().mid
-#Gmid = kg.getProfile().mid
-#Hmid = kh.getProfile().mid
-#Jmid = kj.getProfile().mid
-#Lmid = kl.getProfile().mid
-#Mmid = km.getProfile().mid
-#Nmid = kn.getProfile().mid
-#Omid = ko.getProfile().mid
-#Pmid = kp.getProfile().mid
-#Qmid = kq.getProfile().mid
-#Rmid = kr.getProfile().mid
-#Smid = ks.getProfile().mid
-#Tmid = kt.getProfile().mid
+Amid = ki.getProfile().mid
+Bmid = kk.getProfile().mid
+Cmid = kc.getProfile().mid
+Dmid = kd.getProfile().mid
+Emid = ke.getProfile().mid
+Fmid = kf.getProfile().mid
+Gmid = kg.getProfile().mid
+Hmid = kh.getProfile().mid
+Jmid = kj.getProfile().mid
+Lmid = kl.getProfile().mid
+Mmid = km.getProfile().mid
+Nmid = kn.getProfile().mid
+Omid = ko.getProfile().mid
+Pmid = kp.getProfile().mid
+Qmid = kq.getProfile().mid
+Rmid = kr.getProfile().mid
+Smid = ks.getProfile().mid
+Tmid = kt.getProfile().mid
 protectname = []
 protecturl = []
 protection = []
@@ -320,12 +314,12 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots = ["u0adc61aa5cd6089012db01c25d72c70c",mid]
-self = ["u0adc61aa5cd6089012db01c25d72c70c",mid]
-admin = "u0adc61aa5cd6089012db01c25d72c70c"
-owner = "u0adc61aa5cd6089012db01c25d72c70c"
-admsa = "u0adc61aa5cd6089012db01c25d72c70c"
-adminMID = "u0adc61aa5cd6089012db01c25d72c70c"
+Bots = ["u6b34b703cbc5fc83cd1e5b6832a05352",mid]
+self = ["u6b34b703cbc5fc83cd1e5b6832a05352",mid]
+admin = "u6b34b703cbc5fc83cd1e5b6832a05352"
+owner = "u6b34b703cbc5fc83cd1e5b6832a05352"
+admsa = "u6b34b703cbc5fc83cd1e5b6832a05352"
+adminMID = "u6b34b703cbc5fc83cd1e5b6832a05352"
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -333,10 +327,10 @@ wait = {
     'leaveRoom':False,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me MY 💋🕉unni͡° ͜ʖ ͡°oppa🕉✒",
+    'message':"Thanks for add Me MY 🇲🇨〖WONG-JOMBANG〗🇲🇨",
     'copy':False,
     "lang":"JP",
-    "comment":"AutoLike by 💋🕉unni͡° ͜ʖ ͡°oppa🕉✒",
+    "comment":"AutoLike by 🇲🇨〖WONG-JOMBANG〗🇲🇨",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -2280,7 +2274,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 13:
                 msg.to = msg.from_
-                if msg.from_ == "u0adc61aa5cd6089012db01c25d72c70c":
+                if msg.from_ == "u6b34b703cbc5fc83cd1e5b6832a05352":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -3111,7 +3105,7 @@ def bot(op):
 				msg.contentType = 13
 				msg.contentMetadata = {'mid': mid}
 				cl.sendMessage(msg)
-				cl.sendText(msg.to,"My Creator 👉U.k-MorYena")
+				cl.sendText(msg.to,"My Creator 👉W,J-yudi")
 
             elif "Id" == msg.text:
                 key = msg.to
@@ -3688,7 +3682,7 @@ def bot(op):
                         cl.sendText(msg.to,"要了关断。")
 
             elif msg.text in ["settings"]:
-                md = "✯=[🕵️🇲🇨🕉unni͡° ͜ʖ ͡°oppa🕉🇲🇨🕵️]=✯\n\n"
+                md = "✯=[🕵️🇲🇨WONG-JOMBANG🇲🇨🕵️]=✯\n\n"
                                                     
 
                 if wait["likeOn"] == True: md+="��❂͜͡🕵️➣Auto like : → ✔️\n"
@@ -3729,10 +3723,10 @@ def bot(op):
                 else:md+="��❂͜͡🕵️➣Simisimi : → ❌\n"
                 if wait["commentOn"] == True: md+="��❂͜͡🕵️➣Comment : → ✔\n"
                 else:md+="��❂͜͡🕵️➣Comment : → ❌\n"
-#                if wait["AutoKick"] == True: md+="��❂͜͡🕵️➣AutoKick : → ✔\n"
-#                else:md+="��❂͜͡🕵️➣AutoKick : → ❌\n"
-#                if wait["protectionOn"] == True: md+="��❂͜͡🕵️➣Protection : → ✔\n\n"+ datetime.today().strftime('%H:%M:%S')
-#                else:md+="��❂͜͡🕵️➣Protection : → ❌\n\n"+ datetime.today().strftime('%H:%M:%S')
+                if wait["AutoKick"] == True: md+="��❂͜͡🕵️➣AutoKick : → ✔\n"
+                else:md+="��❂͜͡🕵️➣AutoKick : → ❌\n"
+                if wait["protectionOn"] == True: md+="��❂͜͡🕵️➣Protection : → ✔\n\n"+ datetime.today().strftime('%H:%M:%S')
+                else:md+="��❂͜͡🕵️➣Protection : → ❌\n\n"+ datetime.today().strftime('%H:%M:%S')
                 cl.sendText(msg.to,md)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': admsa}
@@ -4483,7 +4477,7 @@ def bot(op):
 
 #=======================================
             elif msg.text == "Lurking":
-                    cl.sendText(msg.to, "Set point.")
+                    cl.sendText(msg.to, "result")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -4510,7 +4504,7 @@ def bot(op):
 						
 #========================================
 #---------------FUNGSI RATAIN GRUP TANPA KICK SESAMA BOT/Admin/Bots----------#
-            elif "xxx:" in msg.text:
+            elif "cok:" in msg.text:
               if msg.from_ in Bots:
                 if msg.toType == 2:
                     print "ok"
@@ -4732,7 +4726,7 @@ def bot(op):
 					for manusia in n:
 						cl.sendText(manusia,(bctxt))					 
 #========================================
-            elif msg.text in ["mamah pulang"]:
+            elif msg.text in ["mamah moleh"]:
 				gid = cl.getGroupIdsJoined()
 				gid = ki.getGroupIdsJoined()
 				gid = kk.getGroupIdsJoined()
@@ -4771,7 +4765,7 @@ def bot(op):
 					ki.sendText(msg.to,"KAMI PAMIT TEMAN👋😂")
 				else:
 					ki.sendText(msg.to,"He declined all invitations")
-            elif msg.text in ["Pulang","pulang all","ไปใด้"]:
+            elif msg.text in ["Pulang","pulang all","moleh"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
@@ -5293,7 +5287,7 @@ def bot(op):
                               cl.sendMessage(cnt)
 #-----------------------------------------------
 
-            elif "Mention" in msg.text:
+            elif "yudi" in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):
@@ -5309,7 +5303,7 @@ def bot(op):
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     cl.sendMessage(msg)
 
-            elif msg.text in ["Y1tag","Y1 tag"]:
+            elif msg.text in ["mak","bapak"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     name = [contact.mid for contact in group.members]
@@ -5378,7 +5372,7 @@ def bot(op):
                     pass
 #------------------------------------------------------------------------------------
         if op.type == 32:
-			OWN = "udee46099e25e71f1fd1817cae9e7c429"
+			OWN = "u6b34b703cbc5fc83cd1e5b6832a05352"
 			if op.param2 in OWN:
 				pass
 			else:
