@@ -97,17 +97,17 @@ kp.loginResult()
 
 kq = VIPRO.LINE()
 #kq.login(qr=True)
-kq.login(token="EtE2Tq8Y2xHarMoe0ew9.qMCHtdJp35ezbFZkNZ9z2q.SJU/CJxt4KDH2VL3kj95zttlXpdv1eR7W4OnTShYgJQ=")
+kq.login(token="EtyUipQvFopJMi9tKT35.ek3xRTvV3R9tPwJiLN/31q.QaZ/yFOrUzK/A8h9ZS+yLjUcb9ZSp8uW7nM0B/kwrrY=")
 kq.loginResult()
 
 kr = VIPRO.LINE()
 #kr.login(qr=True)
-kr.login(token="EtyUipQvFopJMi9tKT35.ek3xRTvV3R9tPwJiLN/31q.QaZ/yFOrUzK/A8h9ZS+yLjUcb9ZSp8uW7nM0B/kwrrY=")
+kr.login(token="EtH0mXOrwzKAdqS1coK3.eXGEKA8y87MQtoFvPFGwuW.qsHf27D95T7seXXw83YYGybFa5DoFdfG9cin5asAvN8=")
 kr.loginResult()
 
 ks = VIPRO.LINE()
 #ks.login(qr=True)
-ks.login(token="EtH0mXOrwzKAdqS1coK3.eXGEKA8y87MQtoFvPFGwuW.qsHf27D95T7seXXw83YYGybFa5DoFdfG9cin5asAvN8=")
+ks.login(token="EtifF8Zg3m60JGYjgLHb.drkXjI9kC7gz45kx2rUb2W.w61o8ilg/cIVctY1PJD3kZAz/Qzc9GUOVupeojhjmdw=")
 ks.loginResult()
 
 kt = VIPRO.LINE()
@@ -287,8 +287,8 @@ ______________________________________
 """
 
 
-KAC=[cl]
-mid = cl.getProfile().mid
+KAC=[vipro]
+mid = vipro.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
