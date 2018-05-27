@@ -20,9 +20,10 @@ else:
     import urllib.parse
 
 
-vipro = VIPRO.LINE()
-vipro.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
-vipro.loginResult()
+cl = VIPRO.LINE()
+#cl.login(qr=True)
+cl.login(token="EtegEPRC6P2Y0i2oLRj2.AZs3a8Vf+ipnhLTOmQbtuG.NuA7Ge0lY1h6eOFIlsF9/TUDx6hDrukGCSKx0O6QHT4=")
+cl.loginResult()
 
 
 ki = VIPRO.LINE()
@@ -286,9 +287,8 @@ ______________________________________
 ______________________________________
 """
 
-
-KAC=[vipro]
-mid = vipro.getProfile().mid
+KAC=[cl]
+mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
