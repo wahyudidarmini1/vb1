@@ -24,47 +24,47 @@ import urllib.parse
 #satpam.loginResult()
 
 cl = VIPRO.LINE() # Koplaxs
-cl.login(token="EtRKKXzqude2jELzlii2.AZs3a8Vf+ipnhLTOmQbtuG.iSZiO8eD19Oqskj4uKO964wX6KnkceV2b/5NoQrf/V8=")
+cl.login(token="Et52G9Dly5gYnXyLzPk2.AZs3a8Vf+ipnhLTOmQbtuG.3egvizyUlCORS/7BUO/M9mJjhzCPOKTWDZKYMu4SgL0=")
 cl.loginResult()
 
 ki = VIPRO.LINE() #Luffy
-ki.login(token="Et6ryxn0rB1fTfGNJgcf.0Gxc/M3RVqR4nYkPcDjtZW.Xkll2rvg8vUFbMk6qpRWoceqRxdOI0iDl0ur+6X3Oco=")
+ki.login(token="EtSwC72XZvg62HRRMdne.4uWnRTJU51yT+/CjXTyHBG.8B+xcIlF+El9IQXzygtvya7O7uWk+0Kl4MAKl+xztec=")
 ki.loginResult()
 
 kk = VIPRO.LINE() #Zorro
-kk.login(token="Etvv8gYEbtnCCqBZRNQ6.u5E0qHumGolsyebggFHFzG.ec3r4QPVpRDOzH0KJCvBAA17bxPvJSv3AFY5aY3FSdc=")
+kk.login(token="EtyAsPxKquR5PCL9rHef.0Gxc/M3RVqR4nYkPcDjtZW.AqlENLuQldshai9QJqgnwuO9rBDoAIP8eXY+7VJQ5lY=")
 kk.loginResult()
 
 kc = VIPRO.LINE() #Sanji
-kc.login(token="EthtqmL5cSdh6y8TzRWa.SD28EqyjtLBjPT144PdcQG.dVKSDqx8KWWgg479az11yI8+3x/U+/JyvJQLSkT1sCc=")
+kc.login(token="EtsAnfNbKh1SrFbqtlSa.SD28EqyjtLBjPT144PdcQG.IukGYCBHTy1e9R4kReKzZKthKSxgnD1/aYwiDRw1dHs=")
 kc.loginResult()
 
 ks = VIPRO.LINE() #Ussop
-ks.login(token="EtoRCJAcOPR55ljziER8.BQIP++PfVBkYt2USSm1tMa.z2Bun2uocA+xtD5MapicqGem+/Ef5jcWhO41ejG7uGQ=")
+ks.login(token="EtLu1hSuaClcL5Wqi2E5.s0GaOrjP6Vfn98NxODhvLq.QaEKoieiQNiIReSFqVi5fqS6zhqxHeFfccETUPhGvU8=")
 ks.loginResult()
 
 ka = LINETCR.LINE() #Chooper
-ka.login(token="EtYi5SaWf69VjIB4WWa4.bOiJimUzjLhiapSWdVjeva.sViIOjulyc4xTNADy6yOdWT5+fT1kFVeYMEKjC/6aQk=")
+ka.login(token="EtUzk3rm7auj4NtEbcB1.hSPlQK0sOlldo8W2iFcJWq.Bh9Nh2PS2WDZhmTT1QaYAHXEMkMkMh1GpfMaa9NWFWQ=")
 ka.loginResult()
 
 kb = VIPRO.LINE() #Franky
-kb.login(token="EtW0oNs00CrpszczMuc1.hSPlQK0sOlldo8W2iFcJWq.1npYt8eCdNTi8mF/OV9iNjMthVsCwCrr41Ixu/oEHMQ=")
+kb.login(token="EtSKgyrxWb6WtYy1RG09.VfG2daMSMKOL78PxRGOi6q.bEkiApMMr0GVrj/CM+mKC6Bcu18/0BXFXeDhB0F0ppk=")
 kb.loginResult()
 
 ko = VIPRO.LINE() #Brook
-ko.login(token="EtcECOVE4WmEf258Fzh5.s0GaOrjP6Vfn98NxODhvLq.b3dnjhmwYaFtiR1mDkGzugj038CvfdPtJCEtANmO9cw=")
+ko.login(token="EtFoHGK0TxOFUFF2zbbb.laBbOEpcsXIXQThDvNl//W.14TvuVhGUMiwgN2qn7aZeauvtqmUNA+yN87Uzffs33E=")
 ko.loginResult()
 
 ke = VIPRO.LINE() #Nami
-ke.login(token="Et9Lgd0J5MnwfmqGrZr4./0DOo/10A+PUJG8iHA76Pa.oTXp/JjUBIXDoYmNT1UA0m2ee5PbVVjeJcDE60f8XsQ=")
+ke.login(token="EtY4AwwQDn4qUAgv74y3.Z7tUqKO5oaEP2cnIzYreyW.OO72LnZ+hdvfuOf8f4tt7lIbtNyRUE7S6UFNpAND86w=")
 ke.loginResult()
 
 ku = VIPRO.LINE() #Robin
-ku.login(token="EtbGhCwvaT2rhGNY2kZf.StMJ2yMSv7H5XrT17lGnZW.JQfz7NJXLCAqVaKFJBdIW071GXQaphc2OnfonPRPS3c=")
+ku.login(token="EtC9dnHtxJhiPU0BvPS4./0DOo/10A+PUJG8iHA76Pa.wJ/+lUldCnH1u0TPUjdMQNvS9UKuV0wDznCm3eig/Ks=")
 ku.loginResult()
 
 satpam = VIPRO.LINE() # Jinbei
-satpam.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
+satpam.login(token="Et6nGfppKE3py6jFmuU3.eXGEKA8y87MQtoFvPFGwuW.3ttVEoiykOrbFsVVYCMAGTUp/eLi0dp8xajf7r/x4XI=")
 satpam.loginResult()
 
 k1 = VIPRO.LINE() #Backup (Gunanya Kalo Akun Self Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Selfbot Dan Selfbot Di undang sama dia,lalu dy leave lagi :D)
