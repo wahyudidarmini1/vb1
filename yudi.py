@@ -20,51 +20,51 @@ else:
     import urllib.parse
 
 owner = VIPRO.LINE() #Akun Utama
-owner.login(token="EtfznMzOZL76EBL0Z3H2.AZs3a8Vf+ipnhLTOmQbtuG.wuogaSeLZfvTyRNjBiA7maO9Q1ssEGTYt4I2WjOtC3I=")
+owner.login(token="EtSwC72XZvg62HRRMdne.4uWnRTJU51yT+/CjXTyHBG.8B+xcIlF+El9IQXzygtvya7O7uWk+0Kl4MAKl+xztec=")
 owner.loginResult()
     
 vipro = VIPRO.LINE()
-vipro.login(token="EtMJ5XdiHLJ22DsHMXs8.BQIP++PfVBkYt2USSm1tMa.UJOOqGQayalATNQADFTELlP9tqa7v/0GaSC4465GKPw=")
+vipro.login(token="Et52G9Dly5gYnXyLzPk2.AZs3a8Vf+ipnhLTOmQbtuG.3egvizyUlCORS/7BUO/M9mJjhzCPOKTWDZKYMu4SgL0=")
 vipro.loginResult()
 
 ki = VIPRO.LINE()
-ki.login(token="EtUs0tnBPMxIbuSiWaL4.bOiJimUzjLhiapSWdVjeva.ktiaY1w0TqQAyCp7r4V1ktD8f1wd5tIHMScefsVgZnU=")
+ki.login(token="EtyAsPxKquR5PCL9rHef.0Gxc/M3RVqR4nYkPcDjtZW.AqlENLuQldshai9QJqgnwuO9rBDoAIP8eXY+7VJQ5lY=")
 ki.loginResult()
 
 ki2= VIPRO.LINE()
-ki2.login(token="EtAonT0YgCpswd0UqZbb.DQKC4akNYSJx6AqIuzyS6W.8Jw5b/VT6Dt+xUuPfvNONp52njMm3GAOWXT1W50p674=")
+ki2.login(token="EtsAnfNbKh1SrFbqtlSa.SD28EqyjtLBjPT144PdcQG.IukGYCBHTy1e9R4kReKzZKthKSxgnD1/aYwiDRw1dHs=")
 ki2.loginResult()
 
 ki3 = VIPRO.LINE()
-ki3.login(token="EtsgrIlBbnxQjghUA7r5.s0GaOrjP6Vfn98NxODhvLq.JE1rl6HbVla4bmGOqn+Ac0zafquCN+9X5EQcykDpoOE=")
+ki3.login(token="EtLu1hSuaClcL5Wqi2E5.s0GaOrjP6Vfn98NxODhvLq.QaEKoieiQNiIReSFqVi5fqS6zhqxHeFfccETUPhGvU8=")
 ki3.loginResult()
 
 ki4 = VIPRO.LINE()
-ki4.login(token="EtrHmWx8P23HpfRnAZq1.hSPlQK0sOlldo8W2iFcJWq.TSfTZ0uloPcUxYRpOZuBn+nEAdaMQj1nDRnLF/KFm0M=")
+ki4.login(token="EtUzk3rm7auj4NtEbcB1.hSPlQK0sOlldo8W2iFcJWq.Bh9Nh2PS2WDZhmTT1QaYAHXEMkMkMh1GpfMaa9NWFWQ=")
 ki4.loginResult()
 
 ki5 = VIPRO.LINE()
-ki5.login(token="EtCtE5eVAWgSflZYlinb.laBbOEpcsXIXQThDvNl//W.ISsDvhpdxP8HwZRbKuTokvfarSwKDIsWTSYLoJr0sYY=")
+ki5.login(token="EtSKgyrxWb6WtYy1RG09.VfG2daMSMKOL78PxRGOi6q.bEkiApMMr0GVrj/CM+mKC6Bcu18/0BXFXeDhB0F0ppk=")
 ki5.loginResult()
 
 ki6 = VIPRO.LINE()
-ki6.login(token="Etoh4TNizwHkkGUFs6Wc.Ee/eeDlrP0uTdFlXuHf9Na.EWvUWz2ZYHSCh4R/WKN9YSuAl4wNUTFEaB7NqefeSXE=")
+ki6.login(token="EtFoHGK0TxOFUFF2zbbb.laBbOEpcsXIXQThDvNl//W.14TvuVhGUMiwgN2qn7aZeauvtqmUNA+yN87Uzffs33E=")
 ki6.loginResult()
 
 ki7 = VIPRO.LINE()
-ki7.login(token="Etmuakbm8Uq1fRMrrvZ4./0DOo/10A+PUJG8iHA76Pa.g7xkJ92b7s0HPX0wOMVMFpqquWosJmJoslrFj2bx0LI=")
+ki7.login(token="EtY4AwwQDn4qUAgv74y3.Z7tUqKO5oaEP2cnIzYreyW.OO72LnZ+hdvfuOf8f4tt7lIbtNyRUE7S6UFNpAND86w=")
 ki7.loginResult()
 
 ki8 = VIPRO.LINE()
-ki8.login(token="Et91sbY3FlyxwC6nyf0b.drkXjI9kC7gz45kx2rUb2W.B45GK8LeHEhSailVIqKQMdPVP0tCV2+iePjjprOwdok=")
+ki8.login(token="EtC9dnHtxJhiPU0BvPS4./0DOo/10A+PUJG8iHA76Pa.wJ/+lUldCnH1u0TPUjdMQNvS9UKuV0wDznCm3eig/Ks=")
 ki8.loginResult()
 
 ki9 = VIPRO.LINE()
-ki9.login(token="EtNLNTYonZnipkZjHva9.VfG2daMSMKOL78PxRGOi6q.UvEujaL2rfIXM6wo9ujqpQN7IB/ueqsZ14dYem/Z8/U=")
+ki9.login(token="Et6nGfppKE3py6jFmuU3.eXGEKA8y87MQtoFvPFGwuW.3ttVEoiykOrbFsVVYCMAGTUp/eLi0dp8xajf7r/x4XI=")
 ki9.loginResult()
 
 ki10 = VIPRO.LINE() #Ghost
-ki10.login(token="EtP6IvL4pbTS0UqXml83.Z7tUqKO5oaEP2cnIzYreyW./skjh1WmSIGNl8Uaj7clVzxebafOqTTQGnozr49cIjU=")
+ki10.login(token="EtJrNZPBJLWc0uhIB2Mb.drkXjI9kC7gz45kx2rUb2W.poBOMp1ny9lXl6FJH6xNOnvKpL0pWbFZ3cKj6yp0eq4=")
 ki10.loginResult()
 print "═══「vipro login success」═══"
 reload(sys)
@@ -1001,7 +1001,7 @@ def bot(op):
         if op.type == 24:
             if wait["leaveRoom"] == True:
                 vipro.leaveRoom(op.param1)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
@@ -1125,7 +1125,7 @@ def bot(op):
                     text = msg.text
                     if text is not None:
                         ki.sendText(msg.to,text)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.to in settings["simiSimi"]:
                 if settings["simiSimi"][msg.to] == True:
@@ -1216,7 +1216,7 @@ def bot(op):
                     vipro.removeAllMessages(op.param2)
                 else:
                     vipro.removeAllMessages(op.param2)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
                 if wait["wblack"] == True:
