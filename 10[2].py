@@ -22,56 +22,56 @@ else:
 
 cl = VIPRO.LINE() 
 #cl.login(qr=True)
-cl.login(token="EtoyUnBy6SX336jlMQK4.bOiJimUzjLhiapSWdVjeva.eOyFH46v4nYLEzPhDN0VF6U2U6gkjMnZrzbaGNYpJEM=")#1
+cl.login(token="Etg5a0wJ2LUceNDARzb2.AZs3a8Vf+ipnhLTOmQbtuG.VbX/HqMlc5QrhK1Ky2TL3C+fk9lXkaUR1RmGqi5YwmY=")#1
 cl.loginResult()
 
 ki = VIPRO.LINE() 
 #ki.login(qr=True)
-ki.login(token="EtoyUnBy6SX336jlMQK4.bOiJimUzjLhiapSWdVjeva.eOyFH46v4nYLEzPhDN0VF6U2U6gkjMnZrzbaGNYpJEM=")#2
+ki.login(token="EtOotc71QC2dxUuMmUHe.4uWnRTJU51yT+/CjXTyHBG.OrPF4vBLclm/pCFaf6OGHLIAlnCcP1A7I9pWWADa2D0=")#2
 ki.loginResult()
 
 kk = VIPRO.LINE() 
 #kk.login(qr=True)
-kk.login(token="Etoh4TNizwHkkGUFs6Wc.Ee/eeDlrP0uTdFlXuHf9Na.EWvUWz2ZYHSCh4R/WKN9YSuAl4wNUTFEaB7NqefeSXE=")#3
+kk.login(token="Etnyjka7eVgLXhdsN37f.0Gxc/M3RVqR4nYkPcDjtZW.pD3r0mJhKWbq6l9Bd6SyYkrgfnuC6z5m+oOBaFvSu/s=")#3
 kk.loginResult()
 
 kc = VIPRO.LINE() 
 #kc.login(qr=True)
-kc.login(token="EtHX26W2wTWPCuofF0kb.DQKC4akNYSJx6AqIuzyS6W.og5TXb4tDMUk/+/nJ94EvgUNazkD6cUUhBEg/AM/JCo=")#4
+kc.login(token="EtjuXFmYk1yOVcktphI6.u5E0qHumGolsyebggFHFzG.skz2+DII7A2rRPuSriJa39Yj8F2XMgRGXG+TN46A0Sk=")#4
 kc.loginResult()
 
 ks = VIPRO.LINE() 
 #ks.login(qr=True)
-ks.login(token="EtAWLNoOoIv5Xr8pU4W5.s0GaOrjP6Vfn98NxODhvLq.rRMMQ3wNzQ6lBuoFEj7T5fl36BSoDHSZSsJCUNTFAF8=")#5
+ks.login(token="EtLnnFEAkPOJjpn5Xfya.SD28EqyjtLBjPT144PdcQG.RYanB2pF5ZZIcjkJs4LiYj+uTR5cqTA6U2JbRY96o6E=")#5
 ks.loginResult()
 
 k1 = VIPRO.LINE() 
 #k1.login(qr=True)
-k1.login(token="Etsb4bf2aLmt22CLbdM1.hSPlQK0sOlldo8W2iFcJWq.9z1T9wd52QRXCBsD8ZPRfuOWxB30C4dqC+5LZ9isyOs=")#6
+k1.login(token="EtOqU33kHe5XC8BGTmh8.BQIP++PfVBkYt2USSm1tMa.8BFefx6cVgTNX5eJzYc+l4LywaBxTjSXa40yQhT/CnQ=")#6
 k1.loginResult()
 
 k2 = VIPRO.LINE() 
 #k2.login(qr=True)
-k2.login(token="EtqeQRnM0J5hb3DF9Hd3.eXGEKA8y87MQtoFvPFGwuW.9W6hFV9wVNjovo/wRUGlaQoB2e5eJu41BtrvCBryF5k=")#7
+k2.login(token="Et1oDg0GAtlUOLWITYQ4.bOiJimUzjLhiapSWdVjeva.z0NEFEiNtZM/PIfK9kLmsGXjArapf0aNky+9PnuhSgk=")#7
 k2.loginResult()
 
 k3 = VIPRO.LINE() 
 #k3.login(qr=True)
-k3.login(token="Es8vYKNmM9abJ0j94yu4./0DOo/10A+PUJG8iHA76Pa.Djzf6H8GcMj4u3bNdR2Y7MDz0tEvVj56ZVcC2hsjXbE=")#8
+k3.login(token="Ett2EteyFYCOxCo6A13c.Ee/eeDlrP0uTdFlXuHf9Na.AbQWocpR1HI++ql5/NDjs5LqOODEmqi+smJGXKG6cDY=")#8
 k3.loginResult()
 
 k4 = VIPRO.LINE() 
 #k4.login(qr=True)
-k4.login(token="EsQok8WtRiaG8z9tAmLb.drkXjI9kC7gz45kx2rUb2W.HLL9Tgq3V/R0HapVKB7eie6iIyd5v9EWoHW8yUdYMrM=")#9
+k4.login(token="EtGTodiHMhwIasfCBeTb.DQKC4akNYSJx6AqIuzyS6W.Qtp4/ZyGsYkU3BQ70TVfC4tZsAlH/ErJSF9uQDqPw6M=")#9
 k4.loginResult()
 
 k5 = VIPRO.LINE() 
 #k5.login(qr=True)
-k5.login(token="EseDjmK6g3x3fDqLqpi9.VfG2daMSMKOL78PxRGOi6q.7p6lZkmhas/XNbHuRv0gXhVWglt27Vj+OsL/1ff4oW8=")#10
+k5.login(token="EtFG4i60noG4RbC1UJh5.s0GaOrjP6Vfn98NxODhvLq.n1xwCbTzL6ui/lLDi4qVHjZt/mE6j+ER6/VWmRy1FJY=")#10
 k5.loginResult()
 
 satpam1 = VIPRO.LINE()  
-satpam1.login(token="EsuEtyOsxSczjk38EJ13.Z7tUqKO5oaEP2cnIzYreyW.Syxo5zQtXA453kvinaKceDI60eOikzdVOWKAsFsPZHo=")#satpam 
+satpam1.login(token="EtK8qhCpSaVvI4VM45p1.hSPlQK0sOlldo8W2iFcJWq.zd2iFkWE5Lif/urMa3FXjtv6rlzFYF8KFcefL4zhMfc=")#satpam 
 #satpam1.login(qr=True)
 satpam1.loginResult()
 print
@@ -334,7 +334,7 @@ wait = {
 
 Idline: http://line.me/ti/p/yudi_std02""",
     "lang":"JP",
-    "comment":"👉ąµţ๏ℓɨЌ€ By😊\n☆º°˚˚☆✰ tɛǟʍ Wahyudi ɮօt ✰☆º°˚˚☆（＾ω＾）\nąµţ๏ℓɨЌ€ by Kris ⭐👈 »»» http://line.me/ti/p/yudi_std02 «««",
+    "comment":"👉ąµţ๏ℓɨЌ€ By😊\n☆º°˚˚☆✰ tɛǟʍ Wahyudi ɮօt ✰☆º°˚˚☆（＾ω＾）\nąµţ๏ℓɨЌ€ by Yudi ⭐👈 »»» http://line.me/ti/p/yudi_std02 «««",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
