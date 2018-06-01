@@ -20,15 +20,15 @@ else:
     import urllib.parse
 
 acil = VIPRO.LINE() 
-acil.login(token="EtRKKXzqude2jELzlii2.AZs3a8Vf+ipnhLTOmQbtuG.iSZiO8eD19Oqskj4uKO964wX6KnkceV2b/5NoQrf/V8=")
+acil.login(token="EtO8v6DxISvg4X8kllj8.SdpL+kTqxOrCmKy8jwhOwa.gqhbTf2a0+lW649uYosj5iO53/Mbv9iTe5iSENHZf2U=")
 acil.loginResult()
 
 pb1 = VIPRO.LINE() 
-pb1.login(token="EtNObxPwUhlEF1WTDE5e.4uWnRTJU51yT+/CjXTyHBG.ai9QOqjitWSUHWytpqp/vvnS3TwxsPe8PlVvBwnheRc=")
+pb1.login(token="EtvueuK107Kb3XkNQ8Z7.GppIZiwPUzUkVOiNy/8X1W.V0B7bRtLppW6QD7GxeKDTqro4CZZRmneFUrPn4hyS7Y=")
 pb1.loginResult()
 
 pb2 = VIPRO.LINE() 
-pb2.login(token="Et6ryxn0rB1fTfGNJgcf.0Gxc/M3RVqR4nYkPcDjtZW.Xkll2rvg8vUFbMk6qpRWoceqRxdOI0iDl0ur+6X3Oco=")
+pb2.login(token="Etl9lLd67416dOyQXUm5.Ho71mCj9oR1BnPcgCXkpHq.7DfShCYvFybcC9bN6BIzru0nB3S+PmIiGyUxBcV4ioE=")
 pb2.loginResult()
 
 
@@ -36,8 +36,8 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""(╣•℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́•╣)
-╔══B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́══╗
+helpMessage ="""
+╔══════════════╗
 ║Me
 ║Add
 ║Cn "text"
@@ -70,8 +70,8 @@ helpMessage ="""(╣•℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍
 ║Gcancel:"jumlah"
 ║Gcancelall
 ║Ginfo
-║Prank in (Masukin bot)
-║Prank out (Keluarin bot)
+║Masuk (Masukin bot)
+║Moleh (Keluarin bot)
 ║Setlastpoint
 ║Cctv
 ║Glink
@@ -127,16 +127,16 @@ helpMessage ="""(╣•℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍
 ║Proinvite:on/off
 ║Procancel:on/off
 ╚══════════╝
-(╣•℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́•╣)
+
 """
-helo="====I AM SELF PRANKBOTS"
+helo="====I AM SELF WAHYUDI"
 
 KAC=[acil,pb1,pb2]
 mid = acil.getProfile().mid
 pb1mid = pb1.getProfile().mid
 pb2mid = pb2.getProfile().mid
 Bots=[mid,pb1mid,pb2mid]
-admsa = "u6b34b703cbc5fc83cd1e5b6832a05352"
+admsa = "ub033e5fcab505e845c32463c2561e858"
 
 wait = {
     'contact':False,
@@ -145,9 +145,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"""❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nMakasih ya\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂""",
+    'message':"""❂••••AUTO ADD BY WAHYUDI••••❂\nMakasih ya\n❂•••JANGAN LUPA BAHAGIYA YA••••❂""",
     "lang":"JP",
-    "comment1":"❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nMakasih ya\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂",
+    "comment1":"❂••••AUTO ADD BY WAHYUDI••••❂\nMakasih ya\n❂•••JANGAN LUPA BAHAGIYA YA••••❂",
     "comment":"Thanks For Add Me",
     "commentOn":False,
     "commentBlack":{},
@@ -235,7 +235,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u6b34b703cbc5fc83cd1e5b6832a05352":
+                if msg.from_ == "ub033e5fcab505e845c32463c2561e858":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -805,9 +805,9 @@ def bot(op):
                 acil.sendText(msg.to,md)
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
+                msg.contentMetadata = {'mid': 'ub033e5fcab505e845c32463c2561e858'}
                 acil.sendMessage(msg)
-                acil.sendText(msg.to,"❂•••••{CREATOR PRANKBOTS}•••••❂")
+                acil.sendText(msg.to,"❂•••••{CREATOR VEKOK}•••••❂")
             elif "Gowner" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': ginfo.creator.mid}
@@ -815,7 +815,7 @@ def bot(op):
                 acil.sendMessage(msg)
             elif cms(msg.text,["Add"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'u6b34b703cbc5fc83cd1e5b6832a05352'}
+                msg.contentMetadata = {'mid': 'ub033e5fcab505e845c32463c2561e858'}
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
                 acil.sendMessage(msg)
                 acil.sendText(msg.to,"❂•••••••••✧••••••••••❂")
@@ -1285,8 +1285,8 @@ def bot(op):
                                 except:
                                     acil.sendText(msg.to,"Error")
 #-----------------------------------------------------------
-            elif msg.text == "Setlastpoint":
-                    acil.sendText(msg.to, "Check Yang nyimak")
+            elif msg.text == "Cctv":
+                    acil.sendText(msg.to, "readPoint")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -1299,7 +1299,7 @@ def bot(op):
                     wait2['ROM'][msg.to] = {}
                     print wait2
 
-            elif msg.text == "Cctv":
+            elif msg.text == "readPoint":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -1530,13 +1530,13 @@ def bot(op):
 #-----------------------------------------------
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
-                acil.sendText(msg.to, "Processing Request..")
+                cl.sendText(msg.to, "Processing Request..")
                 elapsed_time = time.time() - start
-                acil.sendText(msg.to, "%sseconds" % (elapsed_time))
-                pb1.sendText(msg.to, "%sseconds" % (elapsed_time))
-                pb2.sendText(msg.to, "%sseconds" % (elapsed_time))
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+                #pb1.sendText(msg.to, "%sseconds" % (elapsed_time))
+                #pb2.sendText(msg.to, "%sseconds" % (elapsed_time))
 #-----------------------------------------------
-            elif msg.text.lower() == 'prank in':
+            elif msg.text.lower() == 'Masuk':
                         G = acil.getGroup(msg.to)
                         ginfo = acil.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1622,7 +1622,7 @@ def bot(op):
                         pb2.updateGroup(G)
 #-----------------------------------------------
 #-----------------------------------------------
-            elif msg.text.lower() == 'prank out':
+            elif msg.text.lower() == 'Moleh':
                 if msg.toType == 2:
                     ginfo = acil.getGroup(msg.to)
                     try:
